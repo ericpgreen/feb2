@@ -115,11 +115,56 @@ ggplot(data = state_prov) +
 
 ### `class_def1`
 
-The biggest challenge for evaluating Groundhog Day predictions is defining what we mean by "early spring". So far in this package I follow the general approach of earlier analyses by [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history) and [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/)—with one difference. I define early spring for a prognosticator's location as one month (February OR March) with an average high temperature above the historical average for that month.[^15days] Unlike the previous analyses, however, I use local data for each prognosticator. NOAA used U.S. national temperatures, and 538 looked across nine U.S. regions. I think it's just silly to expect a real or stuffed groundhog to be able to predict national or regional weather based on localized sunshine. I say let's evaluate their powers of prognostication using local data.[^def1]
+The biggest challenge for evaluating Groundhog Day predictions is defining what we mean by "early spring". So far in this package I follow the general approach of earlier analyses by [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history) and [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/). I define early spring for a prognosticator's location as one month (February OR March) with an average high temperature above the historical average for that month.[^15days] Unlike the previous analyses, however, I use local data for each prognosticator. NOAA used U.S. national temperatures, and 538 looked across nine U.S. regions. I think it's just silly to expect a real or stuffed groundhog to be able to predict national or regional weather based on localized sunshine. I say let's evaluate their powers of prognostication using local data.[^def1]
 
 [^15days]: 538 uses the 15-year rolling mean, and so do I.
 
 [^def1]: I refer to this classification definition as `def1`.
+
+Steps to construct the classification: 
+
+1. Identify the 10 weather stations with TMAX data closest to each prognosticator's city
+2. Use `rnoaa::ghcnd_search()` to obtain daily historical high temperatures for each station
+3. Calculate the mean daily high temperature for each prognosticator's city by averaging over the 10 closest weather stations
+4. Calculate the mean monthly high temperature for each prognosticator's city by averaging over the daily data
+5. Calculate the 15-year rolling mean high monthly temperature for each prognosticator's city
+6. Use the `def1` definition to classify each year as "early spring" or "long winter"
+
+```{r Gobbler, message=FALSE, echo=FALSE}
+gk <- tribble(
+  ~prognosticator_city, ~id, ~name, ~latitude, ~longitude, ~distance,
+  "Punxsutawney, PA", "Gobbler's Knob", "Gobbler's Knob", 40.93185285540005, -78.95731896931149,
+  0)
+
+phil <- weather_stations_ghcnd %>%
+  filter(prognosticator_city=="Punxsutawney, PA") %>%
+  arrange(distance) %>%
+  mutate(num = 1:n()) %>%
+  bind_rows(gk) %>%
+  mutate(keep = case_when(
+    name == "Gobbler's Knob" ~ "Gobbler's Knob",
+    num <= 10 ~ "Top 10",
+    TRUE ~ "Others"
+  ))
+
+state_prov %>% 
+  filter(name=="Pennsylvania") %>% 
+  ggplot() + 
+    geom_sf() + 
+    geom_point(data = phil, 
+               aes(x = longitude, y = latitude, color = keep, alpha= keep),
+               size=3) + 
+    scale_color_manual(values=c("red","#000000", "blue")) + 
+    scale_alpha_manual(values=c(1, 0.5, 0.5)) +
+    theme_minimal() +
+    labs(title = "NOAA weather stations within 100km of Punxsutawney, PA",
+         subtitle = "Weather data for prediction classifications comes from 10 closest stations (blue)", 
+         x=NULL,
+         y=NULL) +
+    theme(plot.title = element_text(face="bold"),
+          plot.title.position = "plot",
+          legend.position = "none")
+```
 
 The `class_def1` dataset does not contain the underlying weather data, but you can find it in `class_def1_data`. You can also use the {`rnoaa`} package and the weather station information in `weather_stations_ghcnd` and `weather_stations_isd` to query the weather data directly if you are interested in creating a new classification definition.
 

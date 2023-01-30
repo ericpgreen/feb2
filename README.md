@@ -131,15 +131,32 @@ defining what we mean by “early spring”. So far in this package I follow
 the general approach of earlier analyses by
 [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history)
 and
-[538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/)—with
-one difference. I define early spring for a prognosticator’s location as
-one month (February OR March) with an average high temperature above the
+[538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/).
+I define early spring for a prognosticator’s location as one month
+(February OR March) with an average high temperature above the
 historical average for that month.[^1] Unlike the previous analyses,
 however, I use local data for each prognosticator. NOAA used U.S.
 national temperatures, and 538 looked across nine U.S. regions. I think
 it’s just silly to expect a real or stuffed groundhog to be able to
 predict national or regional weather based on localized sunshine. I say
 let’s evaluate their powers of prognostication using local data.[^2]
+
+Steps to construct the classification:
+
+1.  Identify the 10 weather stations with TMAX data closest to each
+    prognosticator’s city
+2.  Use `rnoaa::ghcnd_search()` to obtain daily historical high
+    temperatures for each station
+3.  Calculate the mean daily high temperature for each prognosticator’s
+    city by averaging over the 10 closest weather stations
+4.  Calculate the mean monthly high temperature for each
+    prognosticator’s city by averaging over the daily data
+5.  Calculate the 15-year rolling mean high monthly temperature for each
+    prognosticator’s city
+6.  Use the `def1` definition to classify each year as “early spring” or
+    “long winter”
+
+![](man/figures/README-Gobbler-1.png)<!-- -->
 
 The `class_def1` dataset does not contain the underlying weather data,
 but you can find it in `class_def1_data`. You can also use the {`rnoaa`}
