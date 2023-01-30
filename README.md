@@ -11,11 +11,10 @@ License: CC0 1.0 Universal (see notes about data licenses)
 
 ## Installation
 
-```{r, eval = FALSE}
+```
 # Install from GitHub
 devtools::install_github("ericpgreen/feb2")
 ```
-
 
 
 

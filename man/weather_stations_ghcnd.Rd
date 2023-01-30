@@ -16,7 +16,7 @@ A data frame with 15045 rows and 6 columns:
 }
 }
 \source{
-<https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "NOAA"
+<https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
 }
 \usage{
 weather_stations_ghcnd

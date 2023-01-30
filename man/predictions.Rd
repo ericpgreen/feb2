@@ -15,7 +15,7 @@ A data frame with 1488 rows and 5 columns:
 }
 }
 \source{
-<https://countdowntogroundhogday.com/predictions/> "Countdown to Groundhog Day"
+<https://countdowntogroundhogday.com/predictions/>
 }
 \usage{
 predictions

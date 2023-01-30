@@ -17,7 +17,7 @@ A data frame with 32912 rows and 7 columns:
 }
 }
 \source{
-<https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "Constructed from NOAA data"
+<https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
 }
 \usage{
 class_def1_data

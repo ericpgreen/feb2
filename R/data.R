@@ -12,7 +12,7 @@
 #'   \item{tmax_monthly_mean_f_15y}{15-year running average monthly high temperature for each location. Degrees Fahrenheit.}
 #'   \item{class}{Classification: early spring or long winter}
 #' }
-#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "Constructed from NOAA data"
+#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
 "class_def1_data"
 
 #' Weather classifications, definition 1
@@ -25,7 +25,7 @@
 #'   \item{year}{Classification year}
 #'   \item{class}{Classification: early spring or long winter}
 #' }
-#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "Constructed from NOAA data"
+#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
 "class_def1"
 
 #' Prediction data
@@ -40,7 +40,7 @@
 #'   \item{prediction}{Recoded prediction: Early Spring, Long Winter, NA}
 #'   \item{predict_early_spring}{Binary indicator where 1 equals Early Spring, 0 equals variants of Long Winter, NA}
 #' }
-#' @source <https://countdowntogroundhogday.com/predictions/> "Countdown to Groundhog Day"
+#' @source <https://countdowntogroundhogday.com/predictions/>
 "predictions"
 
 #' Prognosticators data
@@ -60,7 +60,7 @@
 #'   \item{prognosticator_class}{Prognosticator creature class}
 #'   \item{prognosticator_order}{Prognosticator creature order}
 #' }
-#' @source <https://countdowntogroundhogday.com/groundhogs-from-around-the-world> "Countdown to Groundhog Day"
+#' @source <https://countdowntogroundhogday.com/groundhogs-from-around-the-world>
 "prognosticators"
 
 #' NOAA GHCND Weather Stations Near Prognosticators
@@ -76,7 +76,7 @@
 #'   \item{longitude}{The station's longitude, in decimal degrees. Western longitudes will be negative}
 #'   \item{distance}{distance (km) from coordinates searched}
 #' }
-#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "NOAA"
+#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
 "weather_stations_ghcnd"
 
 #' NOAA ISD Weather Stations Near Prognosticators
@@ -99,5 +99,5 @@
 #'   \item{end}{End date of data coverage, of form YYYYMMDD, numeric}
 #'   \item{distance}{distance (km) from coordinates searched}
 #' }
-#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2> "NOAA"
-weather_stations_isd
+#' @source <https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
+"weather_stations_isd"

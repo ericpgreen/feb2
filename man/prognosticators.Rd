@@ -20,7 +20,7 @@ A data frame with 153 rows and 3 columns:
 }
 }
 \source{
-<https://countdowntogroundhogday.com/groundhogs-from-around-the-world> "Countdown to Groundhog Day"
+<https://countdowntogroundhogday.com/groundhogs-from-around-the-world>
 }
 \usage{
 prognosticators
