@@ -90,7 +90,7 @@ leaflet(data = states) %>%
                    lng = ~longitude, lat = ~latitude, radius=0.5)
 ```
 
-```{r map2, fig.width=6, message=FALSE, echo=FALSE}
+```{r map2, fig.width=8, message=FALSE, echo=FALSE}
 library(rnaturalearth)
 library(sp)
 
