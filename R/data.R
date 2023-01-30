@@ -34,7 +34,7 @@
 #'
 #' @format A data frame with 1488 rows and 5 columns:
 #' \describe{
-#'   \item{prognosticator}{Prognosticator name}
+#'   \item{prognosticator_name}{Prognosticator name}
 #'   \item{year}{Prediction year}
 #'   \item{prediction_orig}{Original prediction label}
 #'   \item{prediction}{Recoded prediction: Early Spring, Long Winter, NA}

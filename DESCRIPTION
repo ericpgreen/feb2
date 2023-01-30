@@ -1,11 +1,11 @@
 Package: feb2
 Type: Package
-Title: Wrangles data to let you evaluate the predictive accuracy of February 2nd prognosticators 
+Title: Groundhog data prediction data and accuracy metrics 
 Version: 0.1.0
 Author: Eric Green
 Maintainer: Eric Green <epgreen@gmail.com>
-Description: Every year on February 2, the famous groundhog Punxsutawney Phil and a growing cast of creatures—living, stuffed, and humans in oversized costumes—emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
-    This packaage brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. 
+Description: Every year on February 2, the famous groundhog Punxsutawney Phil, and a growing cast of creatures (including stuffed animals, sock puppets, and mascots), emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
+    This package brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. 
 License: CC0 1.0 Universal (see notes about data licenses)
 Encoding: UTF-8
 LazyData: true
@@ -13,3 +13,5 @@ Imports: tidyverse
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.1.2
+URL: https://ericpgreen.github.io/feb2/
+BugReports: https://github.com/ericpgreen/feb2/issues

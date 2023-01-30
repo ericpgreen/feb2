@@ -54,7 +54,7 @@ library(tidyverse)
 # wrangle
   predictions <- predictions %>%
     select(Name, year, Prediction) %>%
-    rename(prognosticator = Name,
+    rename(prognosticator_name = Name,
            prediction_orig = Prediction) %>%
     mutate(prediction = case_when(
       prediction_orig == "Long Winter" ~ "Long Winter",

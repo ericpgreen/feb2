@@ -5,16 +5,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Every year on February 2, the famous groundhog Punxsutawney Phil and a growing cast of creatures—living, stuffed, and humans in oversized costumes—emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
-    This packaage brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. ">
-<title>Wrangles data to let you evaluate the predictive accuracy of February 2nd prognosticators  • feb2</title>
+<meta name="description" content="Every year on February 2, the famous groundhog Punxsutawney Phil, and a growing cast of creatures (including stuffed animals, sock puppets, and mascots), emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
+    This package brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. ">
+<title>Groundhog data prediction data and accuracy metrics  • feb2</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Wrangles data to let you evaluate the predictive accuracy of February 2nd prognosticators ">
-<meta property="og:description" content="Every year on February 2, the famous groundhog Punxsutawney Phil and a growing cast of creatures—living, stuffed, and humans in oversized costumes—emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
-    This packaage brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. ">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Groundhog data prediction data and accuracy metrics ">
+<meta property="og:description" content="Every year on February 2, the famous groundhog Punxsutawney Phil, and a growing cast of creatures (including stuffed animals, sock puppets, and mascots), emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.   
+    This package brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. ">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -45,7 +45,14 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav"></ul>
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/ericpgreen/feb2/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 
     
@@ -55,16 +62,134 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="feb2-">feb2 <img src="reference/figures/hex.png" align="right" alt="" width="120"><a class="anchor" aria-label="anchor" href="#feb2-"></a>
 </h1></div>
-<p>Every year on February 2, the famous groundhog Punxsutawney Phil, and a growing cast of creatures—living, stuffed, and humans in oversized costumes—emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.</p>
-<p>This packaage brings together prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to help you evaluate which prognosticators you can trust. License: CC0 1.0 Universal (see notes about data licenses)</p>
+<div class="section level2">
+<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h2>
+<p>Every year on February 2, <a href="https://en.wikipedia.org/wiki/Groundhog_Day" class="external-link">Groundhog Day</a>, the famous groundhog <a href="https://en.wikipedia.org/wiki/Punxsutawney_Phil" class="external-link">Punxsutawney Phil</a>—and a growing cast of creatures (including stuffed animals, sock puppets, and mascots)—emerge from their burrows to predict the weather. Punxsutawney Phil, the prognosticator of prognosticators, has been predicting the weather since 1887. If he sees his shadow, his prediction is for six more weeks of winter. If not, he predicts an early spring.</p>
+<p>This package brings together prediction data from <a href="https://countdowntogroundhogday.com/" class="external-link">Countdown to Groundhog Day</a> and weather data from the <a href="https://www.noaa.gov/" class="external-link">U.S. National Ocean and Atmospheric Administration (NOAA)</a> to help you evaluate which prognosticators you can trust.</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<pre><code><span><span class="co"># Install from GitHub</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ericpgreen/feb2"</span><span class="op">)</span></span></code></pre>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Install from GitHub</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ericpgreen/feb2"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<p>Currently this is a function-less data package designed to facilitate your analyses of Groundhog Day prediction data.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ericpgreen.github.io/feb2/" class="external-link">feb2</a></span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a>
+</h2>
+<p>There are three main datasets and several supporting datasets.</p>
+<div class="figure">
+<img src="reference/figures/feb2%20data.svg" alt=""><p class="caption">Datasets</p>
+</div>
+<div class="section level3">
+<h3 id="prognosticators">
+<code>prognosticators</code><a class="anchor" aria-label="anchor" href="#prognosticators"></a>
+</h3>
+<p>Michael Venos, the creator of <a href="https://countdowntogroundhogday.com/" class="external-link">Countdown to Groundhog Day</a>, maintains the internet’s most comprehensive database about Groundhog Day predictions. He generously agreed to allow me to incorporate his data into this package. Currently he has data on a diverse collection of 153 prognosticators.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="va">prognosticators</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prognosticator_status</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 × 2</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prognosticator_status [3]</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   prognosticator_status     n</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt;                 &lt;int&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Creature                110</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Human Mascot             11</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Inanimate                32</span></span></code></pre></div>
+<p>Rodents are by far the most common prognosticators. One lobster is holding it down for the arthropods.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">prognosticators</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prognosticator_phylum</span>, <span class="va">prognosticator_class</span>, <span class="va">prognosticator_order</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 15 × 4</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="do">## #   [15]</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="do">##    prognosticator_phylum prognosticator_class prognosticator_order     n</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;                 &lt;chr&gt;                &lt;chr&gt;                &lt;int&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 Arthropoda            Malacostraca         Decapoda                 1</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 Chordata              Actinopterygii       Perciformes              1</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 Chordata              Amphibia             Anura                    1</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 Chordata              Aves                 Anseriformes             2</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 Chordata              Aves                 Galliformes              1</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 Chordata              Aves                 Strigiformes             1</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 Chordata              Mammalia             Artiodactyla             1</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 Chordata              Mammalia             Carnivora                9</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 Chordata              Mammalia             Cingulata                1</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 Chordata              Mammalia             Didelphimorphia          3</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 11 Chordata              Mammalia             Eulipotyphla             7</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 12 Chordata              Mammalia             Rodentia               121</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 13 Chordata              Mammalia             Tubulidentata            1</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 14 Chordata              Reptilia             Crocodilia               2</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 15 Chordata              Reptilia             Testudines               1</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="predictions">
+<code>predictions</code><a class="anchor" aria-label="anchor" href="#predictions"></a>
+</h3>
+<p>Michael has collected 1488 predictions going back to Punxsutawney Phil’s first prediction in 1887. Some years the prediction is uncertain or not recorded, accounting for the <code>NA</code>s.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">predictions</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prediction</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 × 2</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prediction [3]</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   prediction       n</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt;        &lt;int&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Early Spring   726</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Long Winter    733</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 &lt;NA&gt;            29</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="weather_stations_ghcnd">
+<code>weather_stations_ghcnd</code><a class="anchor" aria-label="anchor" href="#weather_stations_ghcnd"></a>
+</h3>
+<p>Each prognosticator is linked to a city. I used the {<code>tidygeocoder</code>} package to get coordinates for each city and then searched for weather stations with TMAX (daily max air temperature) data within 100km of each city’s coordinates using the <code>meteo_nearby_stations()</code> function in the {<code>rnoaa</code>} package. This dataset lists every eligible weather station within 100km, but the package only uses weather data from (up to) the 10 closest stations.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Warning: package 'leaflet' was built under R version 4.0.5</span></span></code></pre></div>
+<p><img src="README_files/figure-gfm/map-1.png"><!-- --></p>
+</div>
+<div class="section level3">
+<h3 id="class_def1">
+<code>class_def1</code><a class="anchor" aria-label="anchor" href="#class_def1"></a>
+</h3>
+<p>The biggest challenge for evaluating Groundhog Day predictions is defining what we mean by “early spring”. So far in this package I follow the general approach of earlier analyses by <a href="https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history" class="external-link">NOAA</a> and <a href="https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/" class="external-link">538</a>—with one difference. I define early spring for a prognosticator’s location as one month (February OR March) with an average high temperature above the historical average for that month. Unlike the previous analyses, however, I use local data for each prognosticator. NOAA used U.S. national temperatures, and 538 looked across nine U.S. regions. I refer to classifications based on this definition <code>def1</code>.</p>
+<p>The <code>class_def1</code> dataset does not contain the underlying weather data, but you can find it in <code>class_def1_data</code>. You can also use the {<code>rnoaa</code>} package and the weather station information in <code>weather_stations_ghcnd</code> and <code>weather_stations_isd</code> to query the weather data directly if you are interested in creating a new classification definition.</p>
 </div>
 </div>
-  </main><aside class="col-md-3"><div class="license">
+<div class="section level2">
+<h2 id="updates">Updates<a class="anchor" aria-label="anchor" href="#updates"></a>
+</h2>
+<p>I plan to update the prognosticators, predictions, and classifications data after the month of March (classification definition <code>def1</code> depends on March weather data).</p>
+</div>
+<div class="section level2">
+<h2 id="data-use">Data Use<a class="anchor" aria-label="anchor" href="#data-use"></a>
+</h2>
+<p>NOAA weather data are in the public domain (as far as I know). Data on prognosticators and their predictions come with permission from <a href="https://countdowntogroundhogday.com/" class="external-link">Countdown to Groundhog Day</a>. You are welcome to use the data via this package for any purpose, but please do not post the raw data on any other public sites. Instead, give credit to Michael’s tremendous effort by pointing back to <a href="https://countdowntogroundhogday.com/" class="external-link">Countdown to Groundhog Day</a>.</p>
+</div>
+<div class="section level2">
+<h2 id="issues">Issues<a class="anchor" aria-label="anchor" href="#issues"></a>
+</h2>
+<p>Please <a href="https://github.com/ericpgreen/feb2/issues" class="external-link">submit an issue</a> if you encounter any bugs or errors.</p>
+</div>
+</div>
+  </main><aside class="col-md-3"><div class="links">
+<h2 data-toc-skip>Links</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ericpgreen/feb2/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/ericpgreen/feb2/issues" class="external-link">Report a bug</a></li>
+</ul>
+</div>
+
+<div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>CC0 1.0 Universal (see notes about data licenses)</li>
