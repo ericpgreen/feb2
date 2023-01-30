@@ -164,6 +164,9 @@ do not post the raw data on any other public sites. Instead, give credit
 to Michael’s tremendous effort by pointing back to [Countdown to
 Groundhog Day](https://countdowntogroundhogday.com/).
 
+This package comes with no warranty of any kind. Don’t rely on me or
+these rodents to get it right.
+
 ## Issues
 
 Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if
