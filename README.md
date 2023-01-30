@@ -170,3 +170,8 @@ Groundhog Day](https://countdowntogroundhogday.com/).
 
 Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if
 you encounter any bugs or errors.
+
+## Hex Sticker
+
+The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/)
+creation.
