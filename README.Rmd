@@ -1,5 +1,6 @@
 ---
 output: github_document
+always_allow_html: yes
 ---
 
 <!-- README.md is generated from README.Rmd -->
@@ -32,7 +33,9 @@ library(feb2)
 
 There are three main datasets and several supporting datasets.
 
-![Datasets](man/figures/feb2 data.svg)
+```{r img, echo=FALSE, fig.cap="Datasets"}
+  knitr::include_graphics(path="man/figures/feb2 data.svg")
+```
 
 ### `prognosticators`
 
@@ -67,7 +70,7 @@ predictions %>%
 
 Each prognosticator is linked to a city. I used the {`tidygeocoder`} package to get coordinates for each city and then searched for weather stations with TMAX (daily max air temperature) data within 100km of each city's coordinates using the `meteo_nearby_stations()` function in the {`rnoaa`} package. This dataset lists every eligible weather station within 100km, but the package only uses weather data from (up to) the 10 closest stations.
 
-```{r map, echo=FALSE}
+```{r map, echo=FALSE, message=FALSE, eval=FALSE}
 library(leaflet)
 states <- geojsonio::geojson_read("https://rstudio.github.io/leaflet/json/us-states.geojson", 
                                   what = "sp")
@@ -78,6 +81,29 @@ leaflet(data = states) %>%
   addCircleMarkers(data = weather_stations_ghcnd,
                    lng = ~longitude, lat = ~latitude, radius=0.5)
 ```
+
+```{r map2, fig.width=6, message=FALSE, echo=FALSE}
+library(rnaturalearth)
+library(sp)
+
+state_prov <- rnaturalearth::ne_states(c("united states of america", "canada"),
+                                       returnclass = "sf") %>%
+  filter(name != "Hawaii") %>%
+  filter(name != "Alaska")
+
+ggplot(data = state_prov) + 
+  geom_sf() +
+  geom_point(data = weather_stations_ghcnd, aes(x = longitude, y = latitude),
+             size=0.25, alpha = 0.4) +
+  theme_minimal() +
+  labs(title = "NOAA weather stations within 100km of prognosticators",
+       x=NULL,
+       y=NULL) +
+  theme(plot.title = element_text(face="bold"),
+        plot.title.position = "plot")
+```
+
+
 
 ### `class_def1`
 

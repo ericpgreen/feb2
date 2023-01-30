@@ -125,9 +125,7 @@ city’s coordinates using the `meteo_nearby_stations()` function in the
 within 100km, but the package only uses weather data from (up to) the 10
 closest stations.
 
-    ## Warning: package 'leaflet' was built under R version 4.0.5
-
-![](README_files/figure-gfm/map-1.png)<!-- -->
+![](README_files/figure-gfm/map2-1.png)<!-- -->
 
 ### `class_def1`
 

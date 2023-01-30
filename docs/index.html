@@ -154,8 +154,7 @@
 <code>weather_stations_ghcnd</code><a class="anchor" aria-label="anchor" href="#weather_stations_ghcnd"></a>
 </h3>
 <p>Each prognosticator is linked to a city. I used the {<code>tidygeocoder</code>} package to get coordinates for each city and then searched for weather stations with TMAX (daily max air temperature) data within 100km of each city’s coordinates using the <code>meteo_nearby_stations()</code> function in the {<code>rnoaa</code>} package. This dataset lists every eligible weather station within 100km, but the package only uses weather data from (up to) the 10 closest stations.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Warning: package 'leaflet' was built under R version 4.0.5</span></span></code></pre></div>
-<p><img src="README_files/figure-gfm/map-1.png"><!-- --></p>
+<p><img src="README_files/figure-gfm/map2-1.png"><!-- --></p>
 </div>
 <div class="section level3">
 <h3 id="class_def1">
