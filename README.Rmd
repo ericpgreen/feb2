@@ -4,6 +4,15 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd -->
 
+```{r, echo = FALSE}
+# https://github.com/tidyverse/ggplot2/blob/main/README.Rmd
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
 # feb2 <img src="man/figures/hex.png" align="right" alt="" width="120" />
 
 ## Overview

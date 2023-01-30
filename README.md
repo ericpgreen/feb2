@@ -55,15 +55,14 @@ library(tidyverse)
 prognosticators %>%
   group_by(prognosticator_status) %>%
   count()
+#> # A tibble: 3 × 2
+#> # Groups:   prognosticator_status [3]
+#>   prognosticator_status     n
+#>   <chr>                 <int>
+#> 1 Creature                110
+#> 2 Human Mascot             11
+#> 3 Inanimate                32
 ```
-
-    ## # A tibble: 3 × 2
-    ## # Groups:   prognosticator_status [3]
-    ##   prognosticator_status     n
-    ##   <chr>                 <int>
-    ## 1 Creature                110
-    ## 2 Human Mascot             11
-    ## 3 Inanimate                32
 
 Rodents are by far the most common prognosticators. One lobster is
 holding it down for the arthropods.
@@ -72,28 +71,27 @@ holding it down for the arthropods.
 prognosticators %>%
   group_by(prognosticator_phylum, prognosticator_class, prognosticator_order) %>%
   count()
+#> # A tibble: 15 × 4
+#> # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order
+#> #   [15]
+#>    prognosticator_phylum prognosticator_class prognosticator_order     n
+#>    <chr>                 <chr>                <chr>                <int>
+#>  1 Arthropoda            Malacostraca         Decapoda                 1
+#>  2 Chordata              Actinopterygii       Perciformes              1
+#>  3 Chordata              Amphibia             Anura                    1
+#>  4 Chordata              Aves                 Anseriformes             2
+#>  5 Chordata              Aves                 Galliformes              1
+#>  6 Chordata              Aves                 Strigiformes             1
+#>  7 Chordata              Mammalia             Artiodactyla             1
+#>  8 Chordata              Mammalia             Carnivora                9
+#>  9 Chordata              Mammalia             Cingulata                1
+#> 10 Chordata              Mammalia             Didelphimorphia          3
+#> 11 Chordata              Mammalia             Eulipotyphla             7
+#> 12 Chordata              Mammalia             Rodentia               121
+#> 13 Chordata              Mammalia             Tubulidentata            1
+#> 14 Chordata              Reptilia             Crocodilia               2
+#> 15 Chordata              Reptilia             Testudines               1
 ```
-
-    ## # A tibble: 15 × 4
-    ## # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order
-    ## #   [15]
-    ##    prognosticator_phylum prognosticator_class prognosticator_order     n
-    ##    <chr>                 <chr>                <chr>                <int>
-    ##  1 Arthropoda            Malacostraca         Decapoda                 1
-    ##  2 Chordata              Actinopterygii       Perciformes              1
-    ##  3 Chordata              Amphibia             Anura                    1
-    ##  4 Chordata              Aves                 Anseriformes             2
-    ##  5 Chordata              Aves                 Galliformes              1
-    ##  6 Chordata              Aves                 Strigiformes             1
-    ##  7 Chordata              Mammalia             Artiodactyla             1
-    ##  8 Chordata              Mammalia             Carnivora                9
-    ##  9 Chordata              Mammalia             Cingulata                1
-    ## 10 Chordata              Mammalia             Didelphimorphia          3
-    ## 11 Chordata              Mammalia             Eulipotyphla             7
-    ## 12 Chordata              Mammalia             Rodentia               121
-    ## 13 Chordata              Mammalia             Tubulidentata            1
-    ## 14 Chordata              Reptilia             Crocodilia               2
-    ## 15 Chordata              Reptilia             Testudines               1
 
 ### `predictions`
 
@@ -105,15 +103,14 @@ recorded, accounting for the `NA`s.
 predictions %>%
   group_by(prediction) %>%
   count()
+#> # A tibble: 3 × 2
+#> # Groups:   prediction [3]
+#>   prediction       n
+#>   <chr>        <int>
+#> 1 Early Spring   726
+#> 2 Long Winter    733
+#> 3 <NA>            29
 ```
-
-    ## # A tibble: 3 × 2
-    ## # Groups:   prediction [3]
-    ##   prediction       n
-    ##   <chr>        <int>
-    ## 1 Early Spring   726
-    ## 2 Long Winter    733
-    ## 3 <NA>            29
 
 ### `weather_stations_ghcnd`
 
@@ -125,7 +122,7 @@ city’s coordinates using the `meteo_nearby_stations()` function in the
 within 100km, but the package only uses weather data from (up to) the 10
 closest stations.
 
-![](README_files/figure-gfm/map2-1.png)<!-- -->
+![](man/figures/README-map2-1.png)<!-- -->
 
 ### `class_def1`
 

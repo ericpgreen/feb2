@@ -98,63 +98,63 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="va">prognosticators</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prognosticator_status</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 × 2</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prognosticator_status [3]</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   prognosticator_status     n</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt;                 &lt;int&gt;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Creature                110</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Human Mascot             11</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Inanimate                32</span></span></code></pre></div>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 2</span></span>
+<span><span class="co">#&gt; # Groups:   prognosticator_status [3]</span></span>
+<span><span class="co">#&gt;   prognosticator_status     n</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                 &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 Creature                110</span></span>
+<span><span class="co">#&gt; 2 Human Mascot             11</span></span>
+<span><span class="co">#&gt; 3 Inanimate                32</span></span></code></pre></div>
 <p>Rodents are by far the most common prognosticators. One lobster is holding it down for the arthropods.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">prognosticators</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prognosticator_phylum</span>, <span class="va">prognosticator_class</span>, <span class="va">prognosticator_order</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 15 × 4</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="do">## #   [15]</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="do">##    prognosticator_phylum prognosticator_class prognosticator_order     n</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;                 &lt;chr&gt;                &lt;chr&gt;                &lt;int&gt;</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 Arthropoda            Malacostraca         Decapoda                 1</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 Chordata              Actinopterygii       Perciformes              1</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 Chordata              Amphibia             Anura                    1</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 Chordata              Aves                 Anseriformes             2</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 Chordata              Aves                 Galliformes              1</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 Chordata              Aves                 Strigiformes             1</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 Chordata              Mammalia             Artiodactyla             1</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 Chordata              Mammalia             Carnivora                9</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 Chordata              Mammalia             Cingulata                1</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 Chordata              Mammalia             Didelphimorphia          3</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 11 Chordata              Mammalia             Eulipotyphla             7</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 12 Chordata              Mammalia             Rodentia               121</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 13 Chordata              Mammalia             Tubulidentata            1</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 14 Chordata              Reptilia             Crocodilia               2</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 15 Chordata              Reptilia             Testudines               1</span></span></code></pre></div>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 15 × 4</span></span>
+<span><span class="co">#&gt; # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order</span></span>
+<span><span class="co">#&gt; #   [15]</span></span>
+<span><span class="co">#&gt;    prognosticator_phylum prognosticator_class prognosticator_order     n</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;                 &lt;chr&gt;                &lt;chr&gt;                &lt;int&gt;</span></span>
+<span><span class="co">#&gt;  1 Arthropoda            Malacostraca         Decapoda                 1</span></span>
+<span><span class="co">#&gt;  2 Chordata              Actinopterygii       Perciformes              1</span></span>
+<span><span class="co">#&gt;  3 Chordata              Amphibia             Anura                    1</span></span>
+<span><span class="co">#&gt;  4 Chordata              Aves                 Anseriformes             2</span></span>
+<span><span class="co">#&gt;  5 Chordata              Aves                 Galliformes              1</span></span>
+<span><span class="co">#&gt;  6 Chordata              Aves                 Strigiformes             1</span></span>
+<span><span class="co">#&gt;  7 Chordata              Mammalia             Artiodactyla             1</span></span>
+<span><span class="co">#&gt;  8 Chordata              Mammalia             Carnivora                9</span></span>
+<span><span class="co">#&gt;  9 Chordata              Mammalia             Cingulata                1</span></span>
+<span><span class="co">#&gt; 10 Chordata              Mammalia             Didelphimorphia          3</span></span>
+<span><span class="co">#&gt; 11 Chordata              Mammalia             Eulipotyphla             7</span></span>
+<span><span class="co">#&gt; 12 Chordata              Mammalia             Rodentia               121</span></span>
+<span><span class="co">#&gt; 13 Chordata              Mammalia             Tubulidentata            1</span></span>
+<span><span class="co">#&gt; 14 Chordata              Reptilia             Crocodilia               2</span></span>
+<span><span class="co">#&gt; 15 Chordata              Reptilia             Testudines               1</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="predictions">
 <code>predictions</code><a class="anchor" aria-label="anchor" href="#predictions"></a>
 </h3>
 <p>Michael has collected 1488 predictions going back to Punxsutawney Phil’s first prediction in 1887. Some years the prediction is uncertain or not recorded, accounting for the <code>NA</code>s.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">predictions</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prediction</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 × 2</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="do">## # Groups:   prediction [3]</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   prediction       n</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt;        &lt;int&gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Early Spring   726</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Long Winter    733</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 &lt;NA&gt;            29</span></span></code></pre></div>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html" class="external-link">count</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 2</span></span>
+<span><span class="co">#&gt; # Groups:   prediction [3]</span></span>
+<span><span class="co">#&gt;   prediction       n</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;        &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 Early Spring   726</span></span>
+<span><span class="co">#&gt; 2 Long Winter    733</span></span>
+<span><span class="co">#&gt; 3 &lt;NA&gt;            29</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="weather_stations_ghcnd">
 <code>weather_stations_ghcnd</code><a class="anchor" aria-label="anchor" href="#weather_stations_ghcnd"></a>
 </h3>
 <p>Each prognosticator is linked to a city. I used the {<code>tidygeocoder</code>} package to get coordinates for each city and then searched for weather stations with TMAX (daily max air temperature) data within 100km of each city’s coordinates using the <code>meteo_nearby_stations()</code> function in the {<code>rnoaa</code>} package. This dataset lists every eligible weather station within 100km, but the package only uses weather data from (up to) the 10 closest stations.</p>
-<p><img src="README_files/figure-gfm/map2-1.png"><!-- --></p>
+<p><img src="reference/figures/README-map2-1.png"><!-- --></p>
 </div>
 <div class="section level3">
 <h3 id="class_def1">
