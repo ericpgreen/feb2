@@ -1,6 +1,5 @@
 ---
 output: github_document
-always_allow_html: yes
 ---
 
 <!-- README.md is generated from README.Rmd -->
@@ -34,7 +33,7 @@ library(feb2)
 There are three main datasets and several supporting datasets.
 
 ```{r img, echo=FALSE, fig.cap="Datasets"}
-  knitr::include_graphics(path="man/figures/feb2 data.svg")
+  knitr::include_graphics(path="man/figures/feb2 data.png")
 ```
 
 ### `prognosticators`
@@ -107,7 +106,11 @@ ggplot(data = state_prov) +
 
 ### `class_def1`
 
-The biggest challenge for evaluating Groundhog Day predictions is defining what we mean by "early spring". So far in this package I follow the general approach of earlier analyses by [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history) and [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/)—with one difference. I define early spring for a prognosticator's location as one month (February OR March) with an average high temperature above the historical average for that month. Unlike the previous analyses, however, I use local data for each prognosticator. NOAA used U.S. national temperatures, and 538 looked across nine U.S. regions. I refer to classifications based on this definition `def1`. 
+The biggest challenge for evaluating Groundhog Day predictions is defining what we mean by "early spring". So far in this package I follow the general approach of earlier analyses by [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history) and [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/)—with one difference. I define early spring for a prognosticator's location as one month (February OR March) with an average high temperature above the historical average for that month.[^15days] Unlike the previous analyses, however, I use local data for each prognosticator. NOAA used U.S. national temperatures, and 538 looked across nine U.S. regions. I think it's just silly to expect a real or stuffed groundhog to be able to predict national or regional weather based on localized sunshine. I say let's evaluate their powers of prognostication using local data.[^def1]
+
+[^15days]: 538 uses the 15-year rolling mean, and so do I.
+
+[^def1]: I refer to this classification definition as `def1`.
 
 The `class_def1` dataset does not contain the underlying weather data, but you can find it in `class_def1_data`. You can also use the {`rnoaa`} package and the weather station information in `weather_stations_ghcnd` and `weather_stations_isd` to query the weather data directly if you are interested in creating a new classification definition.
 

@@ -40,7 +40,7 @@ library(feb2)
 
 There are three main datasets and several supporting datasets.
 
-![Datasets](man/figures/feb2%20data.svg)
+![Datasets](man/figures/feb2%20data.png)
 
 ### `prognosticators`
 
@@ -137,10 +137,12 @@ and
 [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/)—with
 one difference. I define early spring for a prognosticator’s location as
 one month (February OR March) with an average high temperature above the
-historical average for that month. Unlike the previous analyses,
+historical average for that month.[^1] Unlike the previous analyses,
 however, I use local data for each prognosticator. NOAA used U.S.
-national temperatures, and 538 looked across nine U.S. regions. I refer
-to classifications based on this definition `def1`.
+national temperatures, and 538 looked across nine U.S. regions. I think
+it’s just silly to expect a real or stuffed groundhog to be able to
+predict national or regional weather based on localized sunshine. I say
+let’s evaluate their powers of prognostication using local data.[^2]
 
 The `class_def1` dataset does not contain the underlying weather data,
 but you can find it in `class_def1_data`. You can also use the {`rnoaa`}
@@ -176,3 +178,7 @@ you encounter any bugs or errors.
 
 The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/)
 creation.
+
+[^1]: 538 uses the 15-year rolling mean, and so do I.
+
+[^2]: I refer to this classification definition as `def1`.
