@@ -178,12 +178,14 @@ I plan to update the prognosticators, predictions, and classifications data afte
 
 NOAA weather data are in the public domain (as far as I know). Data on prognosticators and their predictions come with permission from [Countdown to Groundhog Day](https://countdowntogroundhogday.com/). You are welcome to use the data via this package for any purpose, but please do not post the raw data on any other public sites. Instead, give credit to Michael's tremendous effort by pointing back to [Countdown to Groundhog Day](https://countdowntogroundhogday.com/).
 
-This package comes with no warranty of any kind. Don't rely on me or these rodents to get it right.
-
-## Issues
-
-Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if you encounter any bugs or errors.
-
 ## Hex Sticker
 
 The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/) creation.
+
+## Issues
+
+Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if you encounter any bugs or errors. This package comes with no warranty of any kind. Don't rely on me or these rodents to get it right. Though my family did live in Punxsutawney when I was 4, and I have been to Gobbler's Knob.
+
+```{r me, echo=FALSE, fig.cap="Me visting Gobbler's Knob as a child."}
+  knitr::include_graphics(path="man/figures/gk.png")
+```

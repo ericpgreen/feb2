@@ -180,18 +180,20 @@ do not post the raw data on any other public sites. Instead, give credit
 to Michael’s tremendous effort by pointing back to [Countdown to
 Groundhog Day](https://countdowntogroundhogday.com/).
 
-This package comes with no warranty of any kind. Don’t rely on me or
-these rodents to get it right.
-
-## Issues
-
-Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if
-you encounter any bugs or errors.
-
 ## Hex Sticker
 
 The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/)
 creation.
+
+## Issues
+
+Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if
+you encounter any bugs or errors. This package comes with no warranty of
+any kind. Don’t rely on me or these rodents to get it right. Though my
+family did live in Punxsutawney when I was 4, and I have been to
+Gobbler’s Knob.
+
+![Me visting Gobbler’s Knob as a child.](man/figures/gk.png)
 
 [^1]: 538 uses the 15-year rolling mean, and so do I.
 
