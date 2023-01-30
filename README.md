@@ -136,10 +136,10 @@ I define early spring for a prognosticator’s location as one month
 (February OR March) with an average high temperature above the
 historical average for that month.[^1] Unlike the previous analyses,
 however, I use local data for each prognosticator. NOAA used U.S.
-national temperatures, and 538 looked across nine U.S. regions. I think
-it’s just silly to expect a real or stuffed groundhog to be able to
-predict national or regional weather based on localized sunshine. I say
-let’s evaluate their powers of prognostication using local data.[^2]
+national temperatures, and 538 looked across nine U.S. regions.[^2] I
+think it’s just silly to expect a real or stuffed groundhog to be able
+to predict national or regional weather based on localized sunshine. I
+say let’s evaluate their powers of prognostication using local data.[^3]
 
 Steps to construct the classification:
 
@@ -195,4 +195,8 @@ creation.
 
 [^1]: 538 uses the 15-year rolling mean, and so do I.
 
-[^2]: I refer to this classification definition as `def1`.
+[^2]: NOAA evaluated Phil’s predictions from 2012-2021. 538 expanded the
+    scope of the inquiry from 1 to 9 prognosticators, and included more
+    years, 1994-2021.
+
+[^3]: I refer to this classification definition as `def1`.
