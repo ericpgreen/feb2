@@ -20,7 +20,7 @@ gs4_deauth()
 
   prognosticators_node <- scrape(session) %>%
     html_nodes("#forecaster-table")
-read_sheet()
+
   prognosticators <- prognosticators_node %>%
     html_table() %>%
     flatten_df()
