@@ -148,6 +148,11 @@ I plan to update the prognosticators, predictions, and classifications data afte
 
 Open-Meteo weather data is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data on prognosticators and their predictions come with permission from [Countdown to Groundhog Day](https://countdowntogroundhogday.com/). You are welcome to use the data via this package for any purpose, but please do not post the raw data on any other public sites. Instead, give credit to Michael's tremendous effort by pointing back to [Countdown to Groundhog Day](https://countdowntogroundhogday.com/).
 
+## See Also
+
+- [Byte Burrower](https://www.groundhogday.app/) - An AI-powered groundhog that uses this data to make personalized predictions for your location
+- [Data Science and Byte Burrower](https://groundhogday.site/episode/Data-Science-and-Byte-Burrower) - Podcast episode discussing the data science behind Groundhog Day predictions
+
 ## Hex Sticker
 
 The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/) creation.

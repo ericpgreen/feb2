@@ -156,6 +156,11 @@ do not post the raw data on any other public sites. Instead, give credit
 to Michael's tremendous effort by pointing back to [Countdown to
 Groundhog Day](https://countdowntogroundhogday.com/).
 
+## See Also
+
+- [Byte Burrower](https://www.groundhogday.app/) - An AI-powered groundhog that uses this data to make personalized predictions for your location
+- [Data Science and Byte Burrower](https://groundhogday.site/episode/Data-Science-and-Byte-Burrower) - Podcast episode discussing the data science behind Groundhog Day predictions
+
 ## Hex Sticker
 
 The groundhog pixel art is a [DALL-E 2](https://openai.com/dall-e-2/)
