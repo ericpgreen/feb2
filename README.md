@@ -39,7 +39,42 @@ library(feb2)
 
 There are three main datasets and several supporting datasets.
 
-![Datasets](man/figures/feb2%20data.png)
+```mermaid
+erDiagram
+    prognosticators {
+        string prognosticator_slug PK
+        string prognosticator_name
+        string prognosticator_city
+        float prognosticator_lat
+        float prognosticator_long
+        string prognosticator_type
+        string prognosticator_creature
+        string Status
+    }
+    predictions {
+        string prognosticator_slug FK
+        int year
+        string prediction
+        int predict_early_spring
+    }
+    class_def1 {
+        string prognosticator_city FK
+        int year
+        string class
+    }
+    class_def1_data {
+        string prognosticator_city FK
+        int year
+        int month
+        float tmax_monthly_mean_f
+        float tmax_monthly_mean_f_15y
+        string class
+    }
+    prognosticators ||--o{ predictions : "has"
+    prognosticators ||--o{ class_def1 : "location"
+    prognosticators ||--o{ class_def1_data : "location"
+    class_def1_data ||--|| class_def1 : "summarizes"
+```
 
 ### `prognosticators`
 
@@ -101,8 +136,6 @@ coverage), weather data comes from nearby NOAA GHCND weather stations.
 4.  Calculate the 15-year rolling mean high monthly temperature
 5.  Use the `def1` definition to classify each year as "early spring" or
     "long winter"
-
-![](man/figures/README-Gobbler-1.png)<!-- -->
 
 The `class_def1` dataset contains one row per city-year with the
 classification. The `class_def1_data` dataset contains the underlying
