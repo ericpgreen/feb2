@@ -10,3 +10,4 @@ data-raw/*.csv
 
 # Backup files
 data/*_backup_*.rda
+README.html
