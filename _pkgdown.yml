@@ -2,7 +2,7 @@ url: https://ericpgreen.github.io/feb2/
 
 home:
   title: An R package for analyzing Groundhog Day (Feb 2) weather predictions
-  description: Use prediction data from countdowntogroundhogday.com and weather data from the U.S. National Ocean and Atmospheric Administration (NOAA) to evaluate which Groundhog Day prognosticators you can trust.
+  description: Use prediction data from countdowntogroundhogday.com and weather data from Open-Meteo (ERA5 reanalysis) to evaluate which Groundhog Day prognosticators you can trust.
 
 template:
   bootstrap: 5

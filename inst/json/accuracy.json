@@ -1,0 +1,51 @@
+[
+  {
+    "prognosticator_slug": "Gordy-the-groundhog",
+    "prognosticator_name": "Gordy",
+    "total_predictions": 5,
+    "correct_predictions": 2,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Lander-Lil",
+    "prognosticator_name": "Lander Lil",
+    "total_predictions": 35,
+    "correct_predictions": 15,
+    "accuracy": 42.9
+  },
+  {
+    "prognosticator_slug": "Octoraro-Orphie",
+    "prognosticator_name": "Octoraro Orphie",
+    "total_predictions": 81,
+    "correct_predictions": 61,
+    "accuracy": 75.3
+  },
+  {
+    "prognosticator_slug": "Punxsutawney-Phil",
+    "prognosticator_name": "Punxsutawney Phil",
+    "total_predictions": 87,
+    "correct_predictions": 71,
+    "accuracy": 81.6
+  },
+  {
+    "prognosticator_slug": "Tinicum-Tim",
+    "prognosticator_name": "Tinicum Tim",
+    "total_predictions": 11,
+    "correct_predictions": 6,
+    "accuracy": 54.5
+  },
+  {
+    "prognosticator_slug": "Wiarton-Willie",
+    "prognosticator_name": "Wiarton Willie",
+    "total_predictions": 43,
+    "correct_predictions": 12,
+    "accuracy": 27.9
+  },
+  {
+    "prognosticator_slug": "Wynter",
+    "prognosticator_name": "Wynter",
+    "total_predictions": 6,
+    "correct_predictions": 3,
+    "accuracy": 50
+  }
+]

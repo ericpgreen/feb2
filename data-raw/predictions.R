@@ -8,6 +8,28 @@ library(tidyverse)
   session <- bow(url, user_agent = "Class Project")
   session
 
+# Helper function to extract predictions with slugs from a page
+# ---------------------
+extract_predictions <- function(page) {
+  rows <- page %>% html_nodes("table tr")
+
+  map_dfr(rows[-1], function(row) {
+    cells <- row %>% html_nodes("td")
+    if (length(cells) < 3) return(NULL)
+
+    # Get the link href to extract slug
+    name_link <- cells[2] %>% html_node("a") %>% html_attr("href")
+    slug <- if (!is.na(name_link)) trimws(basename(name_link)) else ""
+
+    tibble(
+      Prediction = cells[1] %>% html_text(trim = TRUE),
+      Name = cells[2] %>% html_text(trim = TRUE),
+      slug = slug,
+      Type = cells[3] %>% html_text(trim = TRUE)
+    )
+  })
+}
+
 # get predictions
 # ---------------------
 
@@ -19,48 +41,49 @@ library(tidyverse)
     url <- paste0("https://countdowntogroundhogday.com/past-predictions/", y)
 
     session <- bow(url, user_agent = "Class Project")
+    page <- scrape(session)
 
-    predictions_node <- scrape(session) %>%
-      html_nodes("#forecaster-table")
-
-    p <- predictions_node %>%
-      html_table() %>%
-      flatten_df() %>%
+    p <- extract_predictions(page) %>%
       mutate(Year = y)
 
     predictions <- predictions %>%
       bind_rows(p)
+
+    message(sprintf("Fetched %d predictions for %d", nrow(p), y))
   }
 
 # loop through 2019-current predictions
+# REMEMBER: update end year
 
-  for (y in 2019:2022) {
+  for (y in 2019:2025) {
     url <- paste0("https://countdowntogroundhogday.com/predictions/", y, "_predictions")
 
     session <- bow(url, user_agent = "Class Project")
+    page <- scrape(session)
 
-    predictions_node <- scrape(session) %>%
-      html_nodes("#forecaster-table")
-
-    p <- predictions_node %>%
-      html_table() %>%
-      flatten_df() %>%
+    p <- extract_predictions(page) %>%
       mutate(Year = y)
 
     predictions <- predictions %>%
       bind_rows(p)
+
+    message(sprintf("Fetched %d predictions for %d", nrow(p), y))
   }
 
 # wrangle
+# REMEMBER: check for predictions that can be re-classified as LW or ES
   predictions <- predictions %>%
-    select(Name, year, Prediction) %>%
+    select(Name, slug, Year, Prediction) %>%
     rename(prognosticator_name = Name,
+           prognosticator_slug = slug,
            prediction_orig = Prediction) %>%
     mutate(prediction = case_when(
       prediction_orig == "Long Winter" ~ "Long Winter",
       prediction_orig == "Long Sloppy Winter" ~ "Long Winter",
       prediction_orig == "Late Spring" ~ "Long Winter",
       prediction_orig == "Early Spring" ~ "Early Spring",
+      prediction_orig == "'Flip- flop' end of winter" ~ "Long Winter",
+      prediction_orig == "Long Spring" ~ "Early Spring",
       TRUE ~ NA_character_
     )) %>%
     mutate(predict_early_spring = case_when(
@@ -68,5 +91,8 @@ library(tidyverse)
       prediction == "Early Spring" ~ 1L,
       TRUE ~ 0L
     ))
+
+message(sprintf("Total predictions: %d", nrow(predictions)))
+message(sprintf("Unique slugs: %d", length(unique(predictions$prognosticator_slug))))
 
 usethis::use_data(predictions, overwrite = TRUE)

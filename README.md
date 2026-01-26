@@ -16,8 +16,7 @@ is for six more weeks of winter. If not, he predicts an early spring.
 
 This package brings together prediction data from [Countdown to
 Groundhog Day](https://countdowntogroundhogday.com/) and weather data
-from the [U.S. National Ocean and Atmospheric Administration
-(NOAA)](https://www.noaa.gov/) to help you evaluate which
+from [Open-Meteo](https://open-meteo.com/) to help you evaluate which
 prognosticators you can trust.
 
 ## Installation
@@ -45,124 +44,69 @@ There are three main datasets and several supporting datasets.
 ### `prognosticators`
 
 Michael Venos, the creator of [Countdown to Groundhog
-Day](https://countdowntogroundhogday.com/), maintains the internet’s
+Day](https://countdowntogroundhogday.com/), maintains the internet's
 most comprehensive database about Groundhog Day predictions. He
 generously agreed to allow me to incorporate his data into this package.
-Currently he has data on a diverse collection of 153 prognosticators.
+Currently he has data on a diverse collection of over 300 prognosticators.
 
-``` r
-library(tidyverse)
-prognosticators %>%
-  group_by(prognosticator_status) %>%
-  count()
-#> # A tibble: 3 × 2
-#> # Groups:   prognosticator_status [3]
-#>   prognosticator_status     n
-#>   <chr>                 <int>
-#> 1 Creature                110
-#> 2 Human Mascot             11
-#> 3 Inanimate                32
-```
-
-Rodents are by far the most common prognosticators. One lobster is
-holding it down for the arthropods.
-
-``` r
-prognosticators %>%
-  group_by(prognosticator_phylum, prognosticator_class, prognosticator_order) %>%
-  count()
-#> # A tibble: 15 × 4
-#> # Groups:   prognosticator_phylum, prognosticator_class, prognosticator_order
-#> #   [15]
-#>    prognosticator_phylum prognosticator_class prognosticator_order     n
-#>    <chr>                 <chr>                <chr>                <int>
-#>  1 Arthropoda            Malacostraca         Decapoda                 1
-#>  2 Chordata              Actinopterygii       Perciformes              1
-#>  3 Chordata              Amphibia             Anura                    1
-#>  4 Chordata              Aves                 Anseriformes             2
-#>  5 Chordata              Aves                 Galliformes              1
-#>  6 Chordata              Aves                 Strigiformes             1
-#>  7 Chordata              Mammalia             Artiodactyla             1
-#>  8 Chordata              Mammalia             Carnivora                9
-#>  9 Chordata              Mammalia             Cingulata                1
-#> 10 Chordata              Mammalia             Didelphimorphia          3
-#> 11 Chordata              Mammalia             Eulipotyphla             7
-#> 12 Chordata              Mammalia             Rodentia               121
-#> 13 Chordata              Mammalia             Tubulidentata            1
-#> 14 Chordata              Reptilia             Crocodilia               2
-#> 15 Chordata              Reptilia             Testudines               1
-```
+Each prognosticator is uniquely identified by a `prognosticator_slug`
+derived from their URL on the Countdown to Groundhog Day website. This
+allows for accurate linking even when multiple prognosticators share
+the same name (e.g., there are multiple "Woody" prognosticators in
+different cities).
 
 ### `predictions`
 
-Michael has collected 1488 predictions going back to Punxsutawney Phil’s
-first prediction in 1887. Some years the prediction is uncertain or not
-recorded, accounting for the `NA`s.
+Michael has collected over 2,400 predictions going back to Punxsutawney
+Phil's first prediction in 1887. Some years the prediction is uncertain
+or not recorded, accounting for the `NA`s.
 
-``` r
-predictions %>%
-  group_by(prediction) %>%
-  count()
-#> # A tibble: 3 × 2
-#> # Groups:   prediction [3]
-#>   prediction       n
-#>   <chr>        <int>
-#> 1 Early Spring   726
-#> 2 Long Winter    733
-#> 3 <NA>            29
-```
-
-### `weather_stations_ghcnd`
-
-Each prognosticator is linked to a city. I used the {`tidygeocoder`}
-package to get coordinates for each city and then searched for weather
-stations with TMAX (daily max air temperature) data within 100km of each
-city’s coordinates using the `meteo_nearby_stations()` function in the
-{`rnoaa`} package. This dataset lists every eligible weather station
-within 100km, but the package only uses weather data from (up to) the 10
-closest stations.
-
-![](man/figures/README-map2-1.png)<!-- -->
+Predictions are linked to prognosticators via `prognosticator_slug`,
+ensuring accurate attribution even for prognosticators with duplicate
+names.
 
 ### `class_def1`
 
 The biggest challenge for evaluating Groundhog Day predictions is
-defining what we mean by “early spring”. So far in this package I follow
+defining what we mean by "early spring". So far in this package I follow
 the general approach of earlier analyses by
 [NOAA](https://www.ncei.noaa.gov/news/groundhog-day-forecasts-and-climate-history)
 and
 [538](https://fivethirtyeight.com/features/groundhogs-do-not-make-good-meteorologists/).
-I define early spring for a prognosticator’s location as one month
+I define early spring for a prognosticator's location as one month
 (February OR March) with an average high temperature above the
 historical average for that month.[^1] Unlike the previous analyses,
 however, I use local data for each prognosticator. NOAA used U.S.
 national temperatures, and 538 looked across nine U.S. regions.[^2] I
-think it’s just silly to expect a real or stuffed groundhog to be able
+think it's just silly to expect a real or stuffed groundhog to be able
 to predict national or regional weather based on localized sunshine. I
-say let’s evaluate their powers of prognostication using local data.[^3]
+say let's evaluate their powers of prognostication using local data.[^3]
 
-Steps to construct the classification:
+#### Weather Data
 
-1.  Identify the 10 weather stations with TMAX data closest to each
-    prognosticator’s city
-2.  Use `rnoaa::ghcnd_search()` to obtain daily historical high
-    temperatures for each station
-3.  Calculate the mean daily high temperature for each prognosticator’s
-    city by averaging over the 10 closest weather stations
-4.  Calculate the mean monthly high temperature for each
-    prognosticator’s city by averaging over the daily data
-5.  Calculate the 15-year rolling mean high monthly temperature for each
-    prognosticator’s city
-6.  Use the `def1` definition to classify each year as “early spring” or
-    “long winter”
+Weather data comes from [Open-Meteo's Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api),
+which provides ERA5 reanalysis data back to 1940. Each prognosticator's
+city is geocoded to coordinates, and daily maximum temperatures are
+retrieved directly for those coordinates.
+
+For Punxsutawney Phil's predictions from 1887-1939 (before Open-Meteo
+coverage), weather data comes from nearby NOAA GHCND weather stations.
+
+#### Classification Steps
+
+1.  Geocode each prognosticator's city to latitude/longitude coordinates
+2.  Query Open-Meteo Historical API for daily maximum temperatures
+    (February and March, 1940-present)
+3.  Calculate the mean monthly high temperature for each location
+4.  Calculate the 15-year rolling mean high monthly temperature
+5.  Use the `def1` definition to classify each year as "early spring" or
+    "long winter"
 
 ![](man/figures/README-Gobbler-1.png)<!-- -->
 
-The `class_def1` dataset does not contain the underlying weather data,
-but you can find it in `class_def1_data`. You can also use the {`rnoaa`}
-package and the weather station information in `weather_stations_ghcnd`
-and `weather_stations_isd` to query the weather data directly if you are
-interested in creating a new classification definition.
+The `class_def1` dataset contains one row per city-year with the
+classification. The `class_def1_data` dataset contains the underlying
+monthly temperature data and rolling averages.
 
 ## Updates
 
@@ -172,12 +116,12 @@ on March weather data).
 
 ## Data Use
 
-NOAA weather data are in the public domain (as far as I know). Data on
-prognosticators and their predictions come with permission from
+Open-Meteo weather data is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Data on prognosticators and their predictions come with permission from
 [Countdown to Groundhog Day](https://countdowntogroundhogday.com/). You
 are welcome to use the data via this package for any purpose, but please
 do not post the raw data on any other public sites. Instead, give credit
-to Michael’s tremendous effort by pointing back to [Countdown to
+to Michael's tremendous effort by pointing back to [Countdown to
 Groundhog Day](https://countdowntogroundhogday.com/).
 
 ## Hex Sticker
@@ -189,15 +133,15 @@ creation.
 
 Please [submit an issue](https://github.com/ericpgreen/feb2/issues) if
 you encounter any bugs or errors. This package comes with no warranty of
-any kind. Don’t rely on me or these rodents to get it right. Though my
+any kind. Don't rely on me or these rodents to get it right. Though my
 family did live in Punxsutawney when I was 4, and I have been to
-Gobbler’s Knob.
+Gobbler's Knob.
 
-![Me visting Gobbler’s Knob as a child.](man/figures/gk.png)
+![Me visting Gobbler's Knob as a child.](man/figures/gk.png)
 
 [^1]: 538 uses the 15-year rolling mean, and so do I.
 
-[^2]: NOAA evaluated Phil’s predictions from 2012-2021. 538 expanded the
+[^2]: NOAA evaluated Phil's predictions from 2012-2021. 538 expanded the
     scope of the inquiry from 1 to 9 prognosticators, and included more
     years, 1994-2021.
 
