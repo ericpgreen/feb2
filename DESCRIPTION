@@ -12,6 +12,6 @@ LazyData: true
 Imports: tidyverse
 Depends: 
     R (>= 2.10)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.1
 URL: https://ericpgreen.github.io/feb2/
 BugReports: https://github.com/ericpgreen/feb2/issues

@@ -5,19 +5,19 @@
 \alias{class_def1_data}
 \title{Weather classifications, data, definition 1}
 \format{
-A data frame with 32912 rows and 7 columns:
+A data frame with 7 columns:
 \describe{
   \item{prognosticator_city}{Where the prognosticator is located}
   \item{year}{Classification year}
   \item{yearmo}{Classification year-month}
   \item{month}{Classification month}
-  \item{tmax_monthly_mean_f}{Average monthly high temperature per location by month and year. Daily high temperatures averaged across up to 10 weather stations near each location. Monthly data then averaged over the daily summaries. Degrees Fahrenheit.}
+  \item{tmax_monthly_mean_f}{Average monthly high temperature per location by month and year. Daily high temperatures from Open-Meteo ERA5 reanalysis data for each prognosticator's coordinates. Degrees Fahrenheit.}
   \item{tmax_monthly_mean_f_15y}{15-year running average monthly high temperature for each location. Degrees Fahrenheit.}
   \item{class}{Classification: early spring or long winter}
 }
 }
 \source{
-<https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
+<https://open-meteo.com/en/docs/historical-weather-api>
 }
 \usage{
 class_def1_data

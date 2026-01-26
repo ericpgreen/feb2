@@ -29,6 +29,7 @@ A data frame with 5262 rows and 13 columns:
 weather_stations_isd
 }
 \description{
-A table listing all NOAA ISD weather stations within 100km of each prognosticator's city coordinates
+A table listing all NOAA ISD weather stations within 100km of each prognosticator's city coordinates.
+Note: As of 2025, weather data primarily comes from Open-Meteo ERA5 reanalysis. ISD stations may be used for supplementary historical analysis.
 }
 \keyword{datasets}

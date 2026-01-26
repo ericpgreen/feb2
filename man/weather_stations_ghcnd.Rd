@@ -22,6 +22,7 @@ A data frame with 15045 rows and 6 columns:
 weather_stations_ghcnd
 }
 \description{
-A table listing all NOAA GHCND weather stations within 100km of each prognosticator's city coordinates
+A table listing all NOAA GHCND weather stations within 100km of each prognosticator's city coordinates.
+Note: As of 2025, weather data primarily comes from Open-Meteo ERA5 reanalysis. GHCND stations are only used for Punxsutawney Phil's pre-1940 predictions (1887-1939).
 }
 \keyword{datasets}

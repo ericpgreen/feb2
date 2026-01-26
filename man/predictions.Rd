@@ -5,9 +5,10 @@
 \alias{predictions}
 \title{Prediction data}
 \format{
-A data frame with 1488 rows and 5 columns:
+A data frame with over 2400 rows and 6 columns:
 \describe{
   \item{prognosticator_name}{Prognosticator name}
+  \item{prognosticator_slug}{Unique identifier derived from the prognosticator's URL on Countdown to Groundhog Day}
   \item{year}{Prediction year}
   \item{prediction_orig}{Original prediction label}
   \item{prediction}{Recoded prediction: Early Spring, Long Winter, NA}

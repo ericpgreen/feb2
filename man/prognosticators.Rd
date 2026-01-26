@@ -5,13 +5,17 @@
 \alias{prognosticators}
 \title{Prognosticators data}
 \format{
-A data frame with 153 rows and 3 columns:
+A data frame with over 300 rows and 14 columns:
 \describe{
   \item{prognosticator_name}{Prognosticator name}
-  \item{prognosticator_type}{Prognosticator type, original labels}
+  \item{Status}{Active/Inactive status}
+  \item{prognosticator_slug}{Unique identifier derived from the prognosticator's URL on Countdown to Groundhog Day. Use this for joining with predictions.}
+  \item{prognosticator_type_orig}{Prognosticator type, original labels from source}
   \item{prognosticator_city}{Where the prognosticator is located}
+  \item{Last Prediction}{Year of last recorded prediction}
   \item{prognosticator_lat}{City latitude}
   \item{prognosticator_long}{City longitude}
+  \item{prognosticator_type}{Prognosticator type, cleaned}
   \item{prognosticator_status}{Prognosticator status: creature, human mascot, inanimate}
   \item{prognosticator_creature}{Prognosticator creature type}
   \item{prognosticator_phylum}{Prognosticator creature phylum}

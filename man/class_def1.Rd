@@ -5,7 +5,7 @@
 \alias{class_def1}
 \title{Weather classifications, definition 1}
 \format{
-A data frame with 16456 rows and 3 columns:
+A data frame with 3 columns:
 \describe{
   \item{prognosticator_city}{Where the prognosticator is located}
   \item{year}{Classification year}
@@ -13,7 +13,7 @@ A data frame with 16456 rows and 3 columns:
 }
 }
 \source{
-<https://www.ncdc.noaa.gov/cdo-web/webservices/v2>
+<https://open-meteo.com/en/docs/historical-weather-api>
 }
 \usage{
 class_def1
