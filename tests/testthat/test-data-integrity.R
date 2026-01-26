@@ -22,8 +22,7 @@ test_that("predictions dataset loads and has required columns", {
   expect_true(exists("predictions"))
   expect_s3_class(predictions, "data.frame")
 
-  # Note: Year is capitalized in predictions dataset
-  required_cols <- c("prognosticator_slug", "Year", "prediction",
+  required_cols <- c("prognosticator_slug", "year", "prediction",
                      "predict_early_spring")
   expect_true(all(required_cols %in% names(predictions)))
 })

@@ -47,11 +47,10 @@ write_json(prognosticators_export,
 predictions_export <- predictions[, c(
   "prognosticator_name",
   "prognosticator_slug",
-  "Year",
+  "year",
   "prediction",
   "predict_early_spring"
 )]
-names(predictions_export)[3] <- "year"  # lowercase for JS convention
 
 message(sprintf("Exporting %d predictions...", nrow(predictions_export)))
 write_json(predictions_export,

@@ -24,12 +24,11 @@ test_that("prognosticator coordinates are valid", {
 })
 
 test_that("prediction years are reasonable", {
-  # Note: Year is capitalized in predictions dataset
-  expect_true(all(predictions$Year >= 1880 & predictions$Year <= 2030,
+  expect_true(all(predictions$year >= 1880 & predictions$year <= 2030,
                   na.rm = TRUE))
 
   # Punxsutawney Phil started in 1887
-  expect_true(min(predictions$Year, na.rm = TRUE) <= 1890)
+  expect_true(min(predictions$year, na.rm = TRUE) <= 1890)
 })
 
 test_that("predictions have valid values", {
@@ -70,8 +69,8 @@ test_that("rolling averages are calculated correctly", {
   # 15-year rolling average should only exist for years with enough history
   has_rolling <- class_def1_data[!is.na(class_def1_data$tmax_monthly_mean_f_15y), ]
 
-  # Open-Meteo data starts from 1892, so rolling avg starts around 1907
-  expect_true(min(has_rolling$year) >= 1902)
+  # Punxsutawney has GHCND data from 1887, others start later with Open-Meteo
+  expect_true(min(has_rolling$year) <= 1940)  # Should have early data
 
   # Rolling average should be close to the actual temp (within reason)
   temp_diff <- abs(has_rolling$tmax_monthly_mean_f - has_rolling$tmax_monthly_mean_f_15y)

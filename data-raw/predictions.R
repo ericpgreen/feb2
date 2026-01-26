@@ -44,7 +44,7 @@ extract_predictions <- function(page) {
     page <- scrape(session)
 
     p <- extract_predictions(page) %>%
-      mutate(Year = y)
+      mutate(year = y)
 
     predictions <- predictions %>%
       bind_rows(p)
@@ -62,7 +62,7 @@ extract_predictions <- function(page) {
     page <- scrape(session)
 
     p <- extract_predictions(page) %>%
-      mutate(Year = y)
+      mutate(year = y)
 
     predictions <- predictions %>%
       bind_rows(p)
@@ -73,7 +73,7 @@ extract_predictions <- function(page) {
 # wrangle
 # REMEMBER: check for predictions that can be re-classified as LW or ES
   predictions <- predictions %>%
-    select(Name, slug, Year, Prediction) %>%
+    select(Name, slug, year, Prediction) %>%
     rename(prognosticator_name = Name,
            prognosticator_slug = slug,
            prediction_orig = Prediction) %>%
