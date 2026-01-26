@@ -70,10 +70,9 @@ erDiagram
         float tmax_monthly_mean_f_15y
         string class
     }
-    prognosticators ||--o{ predictions : "has"
-    prognosticators ||--o{ class_def1 : "location"
-    prognosticators ||--o{ class_def1_data : "location"
-    class_def1_data ||--|| class_def1 : "summarizes"
+    prognosticators ||--o{ predictions : "prognosticator_slug"
+    prognosticators ||--o{ class_def1 : "prognosticator_city"
+    prognosticators ||--o{ class_def1_data : "prognosticator_city"
 ```
 
 ### `prognosticators`
