@@ -1,14 +1,24 @@
 # export_json.R
 # Export feb2 data as JSON for use by byteburrower and other JS applications
+#
+# Usage: Run from feb2 root directory:
+#   source("data-raw/export_json.R")
 
 library(jsonlite)
 
+# Determine base path (works whether run from root or data-raw)
+if (basename(getwd()) == "data-raw") {
+  base_path <- ".."
+} else {
+  base_path <- "."
+}
+
 message("Loading feb2 data...")
-load("../data/prognosticators.rda")
-load("../data/predictions.rda")
+load(file.path(base_path, "data/prognosticators.rda"))
+load(file.path(base_path, "data/predictions.rda"))
 
 # Create export directory
-export_dir <- "../inst/json"
+export_dir <- file.path(base_path, "inst/json")
 if (!dir.exists(export_dir)) {
   dir.create(export_dir, recursive = TRUE)
 }
@@ -52,8 +62,9 @@ write_json(predictions_export,
 
 # Calculate and export accuracy stats per prognosticator
 # This requires class_def1 data - check if it exists
-if (file.exists("../data/class_def1.rda")) {
-  load("../data/class_def1.rda")
+class_def1_path <- file.path(base_path, "data/class_def1.rda")
+if (file.exists(class_def1_path)) {
+  load(class_def1_path)
 
   # Join predictions with classifications
   library(dplyr)
@@ -89,10 +100,21 @@ if (file.exists("../data/class_def1.rda")) {
   message("class_def1.rda not found - skipping accuracy export")
 }
 
+# Export class_def1 (actual outcomes by city/year)
+if (file.exists(class_def1_path)) {
+  message(sprintf("Exporting %d city-year classifications...", nrow(class_def1)))
+  write_json(class_def1,
+             file.path(export_dir, "class_def1.json"),
+             pretty = TRUE,
+             auto_unbox = TRUE,
+             na = "null")
+}
+
 message(sprintf("\nJSON files exported to %s", export_dir))
 message("Files created:")
 message("  - prognosticators.json")
 message("  - predictions.json")
-if (file.exists("../data/class_def1.rda")) {
+if (file.exists(class_def1_path)) {
   message("  - accuracy.json")
+  message("  - class_def1.json")
 }
