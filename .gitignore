@@ -2,4 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
-.Renviron
+
+# Raw data files (too large for git)
+data-raw/*.rds
+data-raw/*.txt
+data-raw/*.csv
+
+# Backup files
+data/*_backup_*.rda

@@ -1,0 +1,145 @@
+# process_openmeteo_batch.R
+# Processes collected Open-Meteo data into class_def1 datasets
+# Run after: weather_openmeteo_batch.R
+
+library(tidyverse)
+
+# =============================================================================
+# Load Raw Data
+# =============================================================================
+
+message("Loading collected weather data...")
+
+if (!file.exists("openmeteo_batch_final.rds")) {
+  stop("openmeteo_batch_final.rds not found. Run weather_openmeteo_batch.R first.")
+}
+
+all_data <- readRDS("openmeteo_batch_final.rds")
+message(sprintf("Loaded %d records for %d cities",
+                nrow(all_data), length(unique(all_data$prognosticator_city))))
+
+# =============================================================================
+# Process Data: Filter to Feb-March, Calculate Classifications
+# =============================================================================
+
+message("\n=== Processing data ===\n")
+
+# Filter to February and March only
+feb_mar_data <- all_data %>%
+  mutate(
+    year = lubridate::year(date),
+    month = lubridate::month(date)
+  ) %>%
+  filter(month %in% c(2, 3))
+
+message(sprintf("Feb-March records: %d", nrow(feb_mar_data)))
+
+# Calculate monthly means
+monthly_means <- feb_mar_data %>%
+  group_by(prognosticator_city, year, month) %>%
+  summarize(
+    tmax_monthly_mean_f = mean(tmax_f, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(yearmo = paste(year, str_pad(month, 2, pad = "0"), sep = "-"))
+
+# Calculate 15-year rolling average by month
+calc_rolling_avg <- function(data, mon) {
+  data %>%
+    filter(month == mon) %>%
+    arrange(prognosticator_city, year) %>%
+    group_by(prognosticator_city) %>%
+    mutate(tmax_monthly_mean_f_15y = zoo::rollmean(
+      tmax_monthly_mean_f,
+      k = 15, fill = NA, align = "right"
+    )) %>%
+    ungroup()
+}
+
+feb_rolling <- calc_rolling_avg(monthly_means, 2)
+mar_rolling <- calc_rolling_avg(monthly_means, 3)
+
+# Combine and classify
+class_def1_openmeteo <- bind_rows(feb_rolling, mar_rolling) %>%
+  arrange(prognosticator_city, year, month) %>%
+  group_by(prognosticator_city, year) %>%
+  mutate(class = case_when(
+    any(tmax_monthly_mean_f > tmax_monthly_mean_f_15y, na.rm = TRUE) ~ "Early Spring",
+    any(is.na(tmax_monthly_mean_f)) ~ NA_character_,
+    any(is.na(tmax_monthly_mean_f_15y)) ~ NA_character_,
+    TRUE ~ "Long Winter"
+  )) %>%
+  ungroup()
+
+# =============================================================================
+# Merge with GHCND for Pre-1940 Data (Punxsutawney Phil's early years)
+# =============================================================================
+
+message("\n=== Merging with GHCND pre-1940 data ===\n")
+
+# Check if backup exists with full GHCND data
+backup_files <- list.files("../data", pattern = "class_def1_data_backup.*\\.rda$", full.names = TRUE)
+if (length(backup_files) > 0) {
+  # Use most recent backup
+  backup_file <- sort(backup_files, decreasing = TRUE)[1]
+  message(sprintf("Loading pre-1940 data from: %s", backup_file))
+  load(backup_file)  # loads class_def1_data
+
+  ghcnd_pre1940 <- class_def1_data %>%
+    filter(year < 1940) %>%
+    filter(prognosticator_city %in% c("Punxsutawney, PA", "Quarryville, PA"))
+
+  message(sprintf("GHCND pre-1940 records: %d", nrow(ghcnd_pre1940)))
+} else {
+  message("No backup file found - skipping pre-1940 data")
+  ghcnd_pre1940 <- NULL
+}
+
+# Combine: GHCND pre-1940 + Open-Meteo 1940+
+class_def1_data_new <- bind_rows(
+  ghcnd_pre1940,
+  class_def1_openmeteo
+) %>%
+  arrange(prognosticator_city, year, month)
+
+# =============================================================================
+# Save Updated Data
+# =============================================================================
+
+message("\n=== Saving data ===\n")
+
+# Save new data
+class_def1_data <- class_def1_data_new
+usethis::use_data(class_def1_data, overwrite = TRUE)
+
+# Also create summary classification (one row per city-year)
+class_def1 <- class_def1_data %>%
+  distinct(prognosticator_city, year, class)
+
+usethis::use_data(class_def1, overwrite = TRUE)
+
+# =============================================================================
+# Summary
+# =============================================================================
+
+message("\n=== SUMMARY ===\n")
+message(sprintf("Total city-year-month records: %d", nrow(class_def1_data)))
+message(sprintf("Unique cities: %d", length(unique(class_def1_data$prognosticator_city))))
+message(sprintf("Year range: %d to %d", min(class_def1_data$year), max(class_def1_data$year)))
+
+message("\nClassification counts:")
+class_def1_data %>%
+  filter(!is.na(class)) %>%
+  distinct(prognosticator_city, year, class) %>%
+  count(class) %>%
+  print()
+
+message("\nRecent years sample:")
+class_def1_data %>%
+  filter(year >= 2023) %>%
+  distinct(prognosticator_city, year, class) %>%
+  group_by(year, class) %>%
+  count() %>%
+  print()
+
+message("\nDone! Now run export_json.R to update JSON exports.")

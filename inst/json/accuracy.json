@@ -1,10 +1,353 @@
 [
   {
+    "prognosticator_slug": "Athene",
+    "prognosticator_name": "Athene",
+    "total_predictions": 7,
+    "correct_predictions": 5,
+    "accuracy": 71.4
+  },
+  {
+    "prognosticator_slug": "Balzac-Billy",
+    "prognosticator_name": "Balzac Billy",
+    "total_predictions": 22,
+    "correct_predictions": 8,
+    "accuracy": 36.4
+  },
+  {
+    "prognosticator_slug": "Beardsley-Bart",
+    "prognosticator_name": "Beardsley Bart",
+    "total_predictions": 14,
+    "correct_predictions": 1,
+    "accuracy": 7.1
+  },
+  {
+    "prognosticator_slug": "Bee-Cave-Bob",
+    "prognosticator_name": "Bee Cave Bob",
+    "total_predictions": 15,
+    "correct_predictions": 3,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Benny-the-Bass",
+    "prognosticator_name": "Benny the Bass",
+    "total_predictions": 10,
+    "correct_predictions": 4,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Big-Al",
+    "prognosticator_name": "Big Al",
+    "total_predictions": 9,
+    "correct_predictions": 6,
+    "accuracy": 66.7
+  },
+  {
+    "prognosticator_slug": "Birmingham-Bill",
+    "prognosticator_name": "Birmingham Bill",
+    "total_predictions": 23,
+    "correct_predictions": 14,
+    "accuracy": 60.9
+  },
+  {
+    "prognosticator_slug": "Boise-Bill",
+    "prognosticator_name": "Boise Bill",
+    "total_predictions": 13,
+    "correct_predictions": 8,
+    "accuracy": 61.5
+  },
+  {
+    "prognosticator_slug": "Bowman-Bill",
+    "prognosticator_name": "Bowman Bill",
+    "total_predictions": 12,
+    "correct_predictions": 11,
+    "accuracy": 91.7
+  },
+  {
+    "prognosticator_slug": "Bristol-Bob",
+    "prognosticator_name": "Bristol Bob",
+    "total_predictions": 5,
+    "correct_predictions": 1,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Buckeye-Chuck",
+    "prognosticator_name": "Buckeye Chuck",
+    "total_predictions": 45,
+    "correct_predictions": 13,
+    "accuracy": 28.9
+  },
+  {
+    "prognosticator_slug": "Buffalo-Bert",
+    "prognosticator_name": "Buffalo Bert",
+    "total_predictions": 8,
+    "correct_predictions": 8,
+    "accuracy": 100
+  },
+  {
+    "prognosticator_slug": "Chattanooga-Chuck",
+    "prognosticator_name": "Chattanooga Chuck",
+    "total_predictions": 10,
+    "correct_predictions": 6,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Chesapeake-Chuck",
+    "prognosticator_name": "Chesapeake Chuck",
+    "total_predictions": 9,
+    "correct_predictions": 3,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Chilly-Charlie",
+    "prognosticator_name": "Chilly Charlie",
+    "total_predictions": 15,
+    "correct_predictions": 4,
+    "accuracy": 26.7
+  },
+  {
+    "prognosticator_slug": "Chipper",
+    "prognosticator_name": "Chipper",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Chuck-Wood",
+    "prognosticator_name": "Chuck Wood",
+    "total_predictions": 9,
+    "correct_predictions": 7,
+    "accuracy": 77.8
+  },
+  {
+    "prognosticator_slug": "Chuckles",
+    "prognosticator_name": "Chuckles",
+    "total_predictions": 34,
+    "correct_predictions": 12,
+    "accuracy": 35.3
+  },
+  {
+    "prognosticator_slug": "Cincinnati-Sammy",
+    "prognosticator_name": "Cincinnati Sammy",
+    "total_predictions": 5,
+    "correct_predictions": 2,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Clucksatawney-Hen",
+    "prognosticator_name": "Cluxatawney Henrietta",
+    "total_predictions": 7,
+    "correct_predictions": 1,
+    "accuracy": 14.3
+  },
+  {
+    "prognosticator_slug": "Cocalico-Cal",
+    "prognosticator_name": "Cocalico Cal",
+    "total_predictions": 13,
+    "correct_predictions": 1,
+    "accuracy": 7.7
+  },
+  {
+    "prognosticator_slug": "Concord-Casimir",
+    "prognosticator_name": "Concord Casimir",
+    "total_predictions": 5,
+    "correct_predictions": 4,
+    "accuracy": 80
+  },
+  {
+    "prognosticator_slug": "Concord-Charlie",
+    "prognosticator_name": "Concord Charlie",
+    "total_predictions": 47,
+    "correct_predictions": 18,
+    "accuracy": 38.3
+  },
+  {
+    "prognosticator_slug": "Corona-Kate-and-Flushing-Meadows-Phil",
+    "prognosticator_name": "Corona Kate and Flushing Meadows Phil",
+    "total_predictions": 11,
+    "correct_predictions": 8,
+    "accuracy": 72.7
+  },
+  {
+    "prognosticator_slug": "Deadly-Dan",
+    "prognosticator_name": "Deadly Dan",
+    "total_predictions": 22,
+    "correct_predictions": 2,
+    "accuracy": 9.1
+  },
+  {
+    "prognosticator_slug": "Dover-Doug",
+    "prognosticator_name": "Dover Doug",
+    "total_predictions": 22,
+    "correct_predictions": 14,
+    "accuracy": 63.6
+  },
+  {
+    "prognosticator_slug": "Dunkirk-Dave",
+    "prognosticator_name": "Dunkirk Dave",
+    "total_predictions": 38,
+    "correct_predictions": 14,
+    "accuracy": 36.8
+  },
+  {
+    "prognosticator_slug": "Edgewater-Elsie",
+    "prognosticator_name": "Edgewater Elsie",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Ernest-the-Skunk",
+    "prognosticator_name": "Ernest",
+    "total_predictions": 10,
+    "correct_predictions": 6,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Essex-Ed",
+    "prognosticator_name": "Essex Ed",
+    "total_predictions": 17,
+    "correct_predictions": 10,
+    "accuracy": 58.8
+  },
+  {
+    "prognosticator_slug": "Fenwick-Flossie",
+    "prognosticator_name": "Fenwick Flossie",
+    "total_predictions": 26,
+    "correct_predictions": 10,
+    "accuracy": 38.5
+  },
+  {
+    "prognosticator_slug": "Flatiron-Freddy",
+    "prognosticator_name": "Flatiron Freddy",
+    "total_predictions": 16,
+    "correct_predictions": 10,
+    "accuracy": 62.5
+  },
+  {
+    "prognosticator_slug": "Fred-la-marmotte",
+    "prognosticator_name": "Fred la marmotte",
+    "total_predictions": 16,
+    "correct_predictions": 10,
+    "accuracy": 62.5
+  },
+  {
+    "prognosticator_slug": "French-Creek-Freddie",
+    "prognosticator_name": "French Creek Freddie",
+    "total_predictions": 35,
+    "correct_predictions": 12,
+    "accuracy": 34.3
+  },
+  {
+    "prognosticator_slug": "General-Beauregard-Lee",
+    "prognosticator_name": "General Beauregard Lee",
+    "total_predictions": 44,
+    "correct_predictions": 5,
+    "accuracy": 11.4
+  },
+  {
+    "prognosticator_slug": "Gertie-the-Groundhog",
+    "prognosticator_name": "Gertie the Groundhog",
+    "total_predictions": 32,
+    "correct_predictions": 10,
+    "accuracy": 31.2
+  },
+  {
     "prognosticator_slug": "Gordy-the-groundhog",
     "prognosticator_name": "Gordy",
     "total_predictions": 5,
     "correct_predictions": 2,
     "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Grady-the-Groundhog",
+    "prognosticator_name": "Grady the Groundhog",
+    "total_predictions": 7,
+    "correct_predictions": 5,
+    "accuracy": 71.4
+  },
+  {
+    "prognosticator_slug": "Greta-the-Groundhog",
+    "prognosticator_name": "Greta the Groundhog",
+    "total_predictions": 5,
+    "correct_predictions": 3,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Grover-Cleveland-Undergrounder",
+    "prognosticator_name": "Grover Cleveland Undergrounder",
+    "total_predictions": 7,
+    "correct_predictions": 3,
+    "accuracy": 42.9
+  },
+  {
+    "prognosticator_slug": "Grover-the-Groundhog",
+    "prognosticator_name": "Grover the Groundhog and Sweet Arrow Sue",
+    "total_predictions": 19,
+    "correct_predictions": 8,
+    "accuracy": 42.1
+  },
+  {
+    "prognosticator_slug": "Grubby-the-Groundhog",
+    "prognosticator_name": "Grubby the Groundhog",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Gus",
+    "prognosticator_name": "Gus",
+    "total_predictions": 5,
+    "correct_predictions": 2,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Harleysville-Hank",
+    "prognosticator_name": "Harleysville Hank",
+    "total_predictions": 10,
+    "correct_predictions": 2,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Henrietta",
+    "prognosticator_name": "Henrietta",
+    "total_predictions": 6,
+    "correct_predictions": 1,
+    "accuracy": 16.7
+  },
+  {
+    "prognosticator_slug": "Holtsville-Hal",
+    "prognosticator_name": "Holtsville Hal",
+    "total_predictions": 27,
+    "correct_predictions": 14,
+    "accuracy": 51.9
+  },
+  {
+    "prognosticator_slug": "Hope-the-Groundhog",
+    "prognosticator_name": "Hope the Groundhog",
+    "total_predictions": 5,
+    "correct_predictions": 3,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Ivy",
+    "prognosticator_name": "Ivy",
+    "total_predictions": 8,
+    "correct_predictions": 5,
+    "accuracy": 62.5
+  },
+  {
+    "prognosticator_slug": "Jimmy-the-Groundhog",
+    "prognosticator_name": "Jimmy the Groundhog",
+    "total_predictions": 57,
+    "correct_predictions": 22,
+    "accuracy": 38.6
+  },
+  {
+    "prognosticator_slug": "Lacey",
+    "prognosticator_name": "Lacey",
+    "total_predictions": 8,
+    "correct_predictions": 6,
+    "accuracy": 75
   },
   {
     "prognosticator_slug": "Lander-Lil",
@@ -14,11 +357,207 @@
     "accuracy": 42.9
   },
   {
+    "prognosticator_slug": "Landing-Lily",
+    "prognosticator_name": "Landing Lily",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Landis-Lou",
+    "prognosticator_name": "Landis Lou",
+    "total_predictions": 16,
+    "correct_predictions": 7,
+    "accuracy": 43.8
+  },
+  {
+    "prognosticator_slug": "Lawrenceville-Lucy",
+    "prognosticator_name": "Lawrenceville Lucy",
+    "total_predictions": 12,
+    "correct_predictions": 4,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Lucy-the-Lobster",
+    "prognosticator_name": "Lucy the Lobster",
+    "total_predictions": 7,
+    "correct_predictions": 6,
+    "accuracy": 85.7
+  },
+  {
+    "prognosticator_slug": "MT-Parker",
+    "prognosticator_name": "MT Parker",
+    "total_predictions": 5,
+    "correct_predictions": 3,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Madoc-Mike",
+    "prognosticator_name": "Madoc Mike",
+    "total_predictions": 5,
+    "correct_predictions": 4,
+    "accuracy": 80
+  },
+  {
+    "prognosticator_slug": "Major",
+    "prognosticator_name": "Major",
+    "total_predictions": 5,
+    "correct_predictions": 2,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Malverne-Mel",
+    "prognosticator_name": "Malverne Mel",
+    "total_predictions": 30,
+    "correct_predictions": 14,
+    "accuracy": 46.7
+  },
+  {
+    "prognosticator_slug": "Manitoba-Merv",
+    "prognosticator_name": "Manitoba Merv",
+    "total_predictions": 28,
+    "correct_predictions": 12,
+    "accuracy": 42.9
+  },
+  {
+    "prognosticator_slug": "Middlemiss-Mike",
+    "prognosticator_name": "Middlemiss Mike and family",
+    "total_predictions": 5,
+    "correct_predictions": 1,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Milltown-Mel",
+    "prognosticator_name": "Milltown Mel",
+    "total_predictions": 13,
+    "correct_predictions": 5,
+    "accuracy": 38.5
+  },
+  {
+    "prognosticator_slug": "Mortimer",
+    "prognosticator_name": "Mortimer",
+    "total_predictions": 5,
+    "correct_predictions": 1,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Mount-Joy-Minnie",
+    "prognosticator_name": "Mount Joy Minnie",
+    "total_predictions": 16,
+    "correct_predictions": 9,
+    "accuracy": 56.2
+  },
+  {
+    "prognosticator_slug": "Ms_G",
+    "prognosticator_name": "Ms. G",
+    "total_predictions": 18,
+    "correct_predictions": 9,
+    "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Mt-Gretna-Grady",
+    "prognosticator_name": "Mount Gretna Grady",
+    "total_predictions": 7,
+    "correct_predictions": 5,
+    "accuracy": 71.4
+  },
+  {
+    "prognosticator_slug": "Murray-the-Groundhog",
+    "prognosticator_name": "Murray the Groundhog",
+    "total_predictions": 7,
+    "correct_predictions": 4,
+    "accuracy": 57.1
+  },
+  {
+    "prognosticator_slug": "Nibbles",
+    "prognosticator_name": "Nibbles",
+    "total_predictions": 6,
+    "correct_predictions": 1,
+    "accuracy": 16.7
+  },
+  {
     "prognosticator_slug": "Octoraro-Orphie",
     "prognosticator_name": "Octoraro Orphie",
     "total_predictions": 81,
     "correct_predictions": 61,
     "accuracy": 75.3
+  },
+  {
+    "prognosticator_slug": "Oil-Springs-Ollie",
+    "prognosticator_name": "Oil Springs Ollie",
+    "total_predictions": 8,
+    "correct_predictions": 5,
+    "accuracy": 62.5
+  },
+  {
+    "prognosticator_slug": "Oscar-the-Groundhog",
+    "prognosticator_name": "Oscar the Groundhog",
+    "total_predictions": 6,
+    "correct_predictions": 3,
+    "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Patty-Pagoda",
+    "prognosticator_name": "Patty Pagoda",
+    "total_predictions": 14,
+    "correct_predictions": 6,
+    "accuracy": 42.9
+  },
+  {
+    "prognosticator_slug": "PeeWee",
+    "prognosticator_name": "PeeWee",
+    "total_predictions": 8,
+    "correct_predictions": 8,
+    "accuracy": 100
+  },
+  {
+    "prognosticator_slug": "Pierre-C-Shadeaux",
+    "prognosticator_name": "Pierre C. Shadeaux",
+    "total_predictions": 7,
+    "correct_predictions": 0,
+    "accuracy": 0
+  },
+  {
+    "prognosticator_slug": "Pisgah-Pete",
+    "prognosticator_name": "Pisgah Pete",
+    "total_predictions": 7,
+    "correct_predictions": 3,
+    "accuracy": 42.9
+  },
+  {
+    "prognosticator_slug": "Polk-County-Paula",
+    "prognosticator_name": "Polk County Paula",
+    "total_predictions": 14,
+    "correct_predictions": 4,
+    "accuracy": 28.6
+  },
+  {
+    "prognosticator_slug": "Poor-Richard",
+    "prognosticator_name": "Poor Richard",
+    "total_predictions": 43,
+    "correct_predictions": 27,
+    "accuracy": 62.8
+  },
+  {
+    "prognosticator_slug": "Poppy-the-Prairie-Dog",
+    "prognosticator_name": "Prairie Dog Poppy",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Potomac-Phil",
+    "prognosticator_name": "Potomac Phil",
+    "total_predictions": 14,
+    "correct_predictions": 9,
+    "accuracy": 64.3
+  },
+  {
+    "prognosticator_slug": "Prairie-Dog-Pete",
+    "prognosticator_name": "Prairie Dog Pete",
+    "total_predictions": 29,
+    "correct_predictions": 22,
+    "accuracy": 75.9
   },
   {
     "prognosticator_slug": "Punxsutawney-Phil",
@@ -28,11 +567,228 @@
     "accuracy": 81.6
   },
   {
+    "prognosticator_slug": "Queen-Charlotte",
+    "prognosticator_name": "Queen Charlotte",
+    "total_predictions": 20,
+    "correct_predictions": 9,
+    "accuracy": 45
+  },
+  {
+    "prognosticator_slug": "Quentin-Quahog",
+    "prognosticator_name": "Quentin the Quahog",
+    "total_predictions": 22,
+    "correct_predictions": 18,
+    "accuracy": 81.8
+  },
+  {
+    "prognosticator_slug": "Ridge-Lea-Larry",
+    "prognosticator_name": "Ridge Lea Larry",
+    "total_predictions": 16,
+    "correct_predictions": 7,
+    "accuracy": 43.8
+  },
+  {
+    "prognosticator_slug": "Rosie",
+    "prognosticator_name": "Rosie",
+    "total_predictions": 5,
+    "correct_predictions": 3,
+    "accuracy": 60
+  },
+  {
+    "prognosticator_slug": "Roxbury-Rita",
+    "prognosticator_name": "Roxbury Rita",
+    "total_predictions": 6,
+    "correct_predictions": 4,
+    "accuracy": 66.7
+  },
+  {
+    "prognosticator_slug": "Rufus-rufa",
+    "prognosticator_name": "Rufus",
+    "total_predictions": 6,
+    "correct_predictions": 3,
+    "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Sand-Mountain-Sam",
+    "prognosticator_name": "Sand Mountain Sam",
+    "total_predictions": 16,
+    "correct_predictions": 2,
+    "accuracy": 12.5
+  },
+  {
+    "prognosticator_slug": "Schnogadahl-Sammi",
+    "prognosticator_name": "Schnogadahl Sammi",
+    "total_predictions": 25,
+    "correct_predictions": 20,
+    "accuracy": 80
+  },
+  {
+    "prognosticator_slug": "Scramble-the-duck",
+    "prognosticator_name": "Scramble the Duck",
+    "total_predictions": 11,
+    "correct_predictions": 8,
+    "accuracy": 72.7
+  },
+  {
+    "prognosticator_slug": "Shipoke-Sheena",
+    "prognosticator_name": "Shipoke Sheena",
+    "total_predictions": 6,
+    "correct_predictions": 1,
+    "accuracy": 16.7
+  },
+  {
+    "prognosticator_slug": "Shubenacadie-Sam",
+    "prognosticator_name": "Shubenacadie Sam",
+    "total_predictions": 26,
+    "correct_predictions": 11,
+    "accuracy": 42.3
+  },
+  {
+    "prognosticator_slug": "Sir-Walter-Wally",
+    "prognosticator_name": "Sir Walter Wally",
+    "total_predictions": 25,
+    "correct_predictions": 17,
+    "accuracy": 68
+  },
+  {
+    "prognosticator_slug": "Smith-Lake-Jake",
+    "prognosticator_name": "Smith Lake Jake",
+    "total_predictions": 9,
+    "correct_predictions": 3,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Snerd",
+    "prognosticator_name": "Snerd",
+    "total_predictions": 12,
+    "correct_predictions": 7,
+    "accuracy": 58.3
+  },
+  {
+    "prognosticator_slug": "Snohomish-Slew",
+    "prognosticator_name": "Snohomish Slew",
+    "total_predictions": 17,
+    "correct_predictions": 10,
+    "accuracy": 58.8
+  },
+  {
+    "prognosticator_slug": "Snowy",
+    "prognosticator_name": "Snowy",
+    "total_predictions": 9,
+    "correct_predictions": 3,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Spanky",
+    "prognosticator_name": "Spanky",
+    "total_predictions": 7,
+    "correct_predictions": 2,
+    "accuracy": 28.6
+  },
+  {
+    "prognosticator_slug": "Staten-Island-Chuck",
+    "prognosticator_name": "Staten Island Chuck",
+    "total_predictions": 42,
+    "correct_predictions": 7,
+    "accuracy": 16.7
+  },
+  {
+    "prognosticator_slug": "Stonewall-Jackson",
+    "prognosticator_name": "Stonewall Jackson",
+    "total_predictions": 14,
+    "correct_predictions": 3,
+    "accuracy": 21.4
+  },
+  {
+    "prognosticator_slug": "Stormy-Marmot",
+    "prognosticator_name": "Stormy Marmot",
+    "total_predictions": 18,
+    "correct_predictions": 10,
+    "accuracy": 55.6
+  },
+  {
+    "prognosticator_slug": "Stumptown-Fil",
+    "prognosticator_name": "Stumptown Fil",
+    "total_predictions": 6,
+    "correct_predictions": 3,
+    "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Sunny-the-Groundhog",
+    "prognosticator_name": "Sunny the Groundhog",
+    "total_predictions": 5,
+    "correct_predictions": 1,
+    "accuracy": 20
+  },
+  {
+    "prognosticator_slug": "Sunset-Sam",
+    "prognosticator_name": "Sunset Sam",
+    "total_predictions": 14,
+    "correct_predictions": 10,
+    "accuracy": 71.4
+  },
+  {
+    "prognosticator_slug": "Susquehanna-Sherman",
+    "prognosticator_name": "Susquehanna Sherman",
+    "total_predictions": 20,
+    "correct_predictions": 11,
+    "accuracy": 55
+  },
+  {
+    "prognosticator_slug": "Sylvia-Armadillo",
+    "prognosticator_name": "Sylvia, The Apex Armadillo",
+    "total_predictions": 5,
+    "correct_predictions": 2,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "T-Boy-the-Nutria",
+    "prognosticator_name": "T-Boy the Nutria",
+    "total_predictions": 12,
+    "correct_predictions": 2,
+    "accuracy": 16.7
+  },
+  {
     "prognosticator_slug": "Tinicum-Tim",
     "prognosticator_name": "Tinicum Tim",
     "total_predictions": 11,
     "correct_predictions": 6,
     "accuracy": 54.5
+  },
+  {
+    "prognosticator_slug": "Tutor",
+    "prognosticator_name": "Tutor",
+    "total_predictions": 5,
+    "correct_predictions": 0,
+    "accuracy": 0
+  },
+  {
+    "prognosticator_slug": "Unadilla-Bill",
+    "prognosticator_name": "Unadilla Bill",
+    "total_predictions": 26,
+    "correct_predictions": 9,
+    "accuracy": 34.6
+  },
+  {
+    "prognosticator_slug": "Uni",
+    "prognosticator_name": "Uni",
+    "total_predictions": 35,
+    "correct_predictions": 26,
+    "accuracy": 74.3
+  },
+  {
+    "prognosticator_slug": "Van-Isle-Violet",
+    "prognosticator_name": "Van Isle Violet",
+    "total_predictions": 5,
+    "correct_predictions": 5,
+    "accuracy": 100
+  },
+  {
+    "prognosticator_slug": "Western-Maryland-Murray",
+    "prognosticator_name": "Western Maryland Murray",
+    "total_predictions": 14,
+    "correct_predictions": 11,
+    "accuracy": 78.6
   },
   {
     "prognosticator_slug": "Wiarton-Willie",
@@ -42,10 +798,73 @@
     "accuracy": 27.9
   },
   {
+    "prognosticator_slug": "Wildwood-Willie",
+    "prognosticator_name": "Wildwood Willie",
+    "total_predictions": 18,
+    "correct_predictions": 9,
+    "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Will-and-wiley",
+    "prognosticator_name": "Will and Wiley",
+    "total_predictions": 13,
+    "correct_predictions": 5,
+    "accuracy": 38.5
+  },
+  {
+    "prognosticator_slug": "Woodburn-Wild-Charles-Winchester",
+    "prognosticator_name": "Woodburn Wild Charles Winchester",
+    "total_predictions": 9,
+    "correct_predictions": 5,
+    "accuracy": 55.6
+  },
+  {
+    "prognosticator_slug": "Woodrow-K-Chuck",
+    "prognosticator_name": "Woodrow K. Chuck",
+    "total_predictions": 9,
+    "correct_predictions": 5,
+    "accuracy": 55.6
+  },
+  {
+    "prognosticator_slug": "Woodstock-Willie",
+    "prognosticator_name": "Woodstock Willie",
+    "total_predictions": 25,
+    "correct_predictions": 10,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Woody",
+    "prognosticator_name": "Woody",
+    "total_predictions": 22,
+    "correct_predictions": 12,
+    "accuracy": 54.5
+  },
+  {
     "prognosticator_slug": "Wynter",
     "prognosticator_name": "Wynter",
     "total_predictions": 6,
     "correct_predictions": 3,
     "accuracy": 50
+  },
+  {
+    "prognosticator_slug": "Yahdee",
+    "prognosticator_name": "Yahdee",
+    "total_predictions": 10,
+    "correct_predictions": 4,
+    "accuracy": 40
+  },
+  {
+    "prognosticator_slug": "Yonah-the-Groundhog",
+    "prognosticator_name": "Yonah the Groundhog",
+    "total_predictions": 6,
+    "correct_predictions": 2,
+    "accuracy": 33.3
+  },
+  {
+    "prognosticator_slug": "Zac",
+    "prognosticator_name": "Mr. Prozac",
+    "total_predictions": 7,
+    "correct_predictions": 3,
+    "accuracy": 42.9
   }
 ]
