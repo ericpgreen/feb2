@@ -19,10 +19,10 @@ message(sprintf("Loaded %d records for %d cities",
                 nrow(all_data), length(unique(all_data$prognosticator_city))))
 
 # =============================================================================
-# Process Data: Filter to Feb-March, Calculate Classifications
+# Process Open-Meteo Data: Filter to Feb-March, Calculate Monthly Means
 # =============================================================================
 
-message("\n=== Processing data ===\n")
+message("\n=== Processing Open-Meteo data ===\n")
 
 # Filter to February and March only
 feb_mar_data <- all_data %>%
@@ -34,14 +34,56 @@ feb_mar_data <- all_data %>%
 
 message(sprintf("Feb-March records: %d", nrow(feb_mar_data)))
 
-# Calculate monthly means
-monthly_means <- feb_mar_data %>%
+# Calculate monthly means for Open-Meteo data
+openmeteo_monthly <- feb_mar_data %>%
   group_by(prognosticator_city, year, month) %>%
   summarize(
     tmax_monthly_mean_f = mean(tmax_f, na.rm = TRUE),
     .groups = "drop"
   ) %>%
   mutate(yearmo = paste(year, str_pad(month, 2, pad = "0"), sep = "-"))
+
+# =============================================================================
+# Load GHCND Pre-1940 Data and Combine BEFORE Calculating Rolling Average
+# =============================================================================
+
+message("\n=== Loading GHCND pre-1940 data ===\n")
+
+# Check if backup exists with full GHCND data
+backup_files <- list.files("../data", pattern = "class_def1_data_backup.*\\.rda$", full.names = TRUE)
+if (length(backup_files) > 0) {
+  # Use most recent backup
+  backup_file <- sort(backup_files, decreasing = TRUE)[1]
+  message(sprintf("Loading pre-1940 data from: %s", backup_file))
+  load(backup_file)  # loads class_def1_data
+
+  # Extract just the monthly means for pre-1940 (drop old rolling avg and class)
+  ghcnd_monthly <- class_def1_data %>%
+    filter(year < 1940) %>%
+    filter(prognosticator_city %in% c("Punxsutawney, PA", "Quarryville, PA")) %>%
+    select(prognosticator_city, year, month, yearmo, tmax_monthly_mean_f)
+
+  message(sprintf("GHCND pre-1940 records: %d", nrow(ghcnd_monthly)))
+} else {
+  message("No backup file found - skipping pre-1940 data")
+  ghcnd_monthly <- NULL
+}
+
+# Combine monthly means FIRST (before rolling average calculation)
+# This ensures the 15-year rolling average carries across the GHCND/Open-Meteo boundary
+combined_monthly <- bind_rows(
+  ghcnd_monthly,
+  openmeteo_monthly
+) %>%
+  arrange(prognosticator_city, year, month)
+
+message(sprintf("Combined monthly records: %d", nrow(combined_monthly)))
+
+# =============================================================================
+# Calculate 15-Year Rolling Average on Combined Data
+# =============================================================================
+
+message("\n=== Calculating 15-year rolling averages ===\n")
 
 # Calculate 15-year rolling average by month
 calc_rolling_avg <- function(data, mon) {
@@ -56,11 +98,11 @@ calc_rolling_avg <- function(data, mon) {
     ungroup()
 }
 
-feb_rolling <- calc_rolling_avg(monthly_means, 2)
-mar_rolling <- calc_rolling_avg(monthly_means, 3)
+feb_rolling <- calc_rolling_avg(combined_monthly, 2)
+mar_rolling <- calc_rolling_avg(combined_monthly, 3)
 
 # Combine and classify
-class_def1_openmeteo <- bind_rows(feb_rolling, mar_rolling) %>%
+class_def1_data_new <- bind_rows(feb_rolling, mar_rolling) %>%
   arrange(prognosticator_city, year, month) %>%
   group_by(prognosticator_city, year) %>%
   mutate(class = case_when(
@@ -70,37 +112,6 @@ class_def1_openmeteo <- bind_rows(feb_rolling, mar_rolling) %>%
     TRUE ~ "Long Winter"
   )) %>%
   ungroup()
-
-# =============================================================================
-# Merge with GHCND for Pre-1940 Data (Punxsutawney Phil's early years)
-# =============================================================================
-
-message("\n=== Merging with GHCND pre-1940 data ===\n")
-
-# Check if backup exists with full GHCND data
-backup_files <- list.files("../data", pattern = "class_def1_data_backup.*\\.rda$", full.names = TRUE)
-if (length(backup_files) > 0) {
-  # Use most recent backup
-  backup_file <- sort(backup_files, decreasing = TRUE)[1]
-  message(sprintf("Loading pre-1940 data from: %s", backup_file))
-  load(backup_file)  # loads class_def1_data
-
-  ghcnd_pre1940 <- class_def1_data %>%
-    filter(year < 1940) %>%
-    filter(prognosticator_city %in% c("Punxsutawney, PA", "Quarryville, PA"))
-
-  message(sprintf("GHCND pre-1940 records: %d", nrow(ghcnd_pre1940)))
-} else {
-  message("No backup file found - skipping pre-1940 data")
-  ghcnd_pre1940 <- NULL
-}
-
-# Combine: GHCND pre-1940 + Open-Meteo 1940+
-class_def1_data_new <- bind_rows(
-  ghcnd_pre1940,
-  class_def1_openmeteo
-) %>%
-  arrange(prognosticator_city, year, month)
 
 # =============================================================================
 # Save Updated Data

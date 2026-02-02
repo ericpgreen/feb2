@@ -9,7 +9,7 @@ A data frame with 3 columns:
 \describe{
   \item{prognosticator_city}{Where the prognosticator is located}
   \item{year}{Classification year}
-  \item{class}{Classification: early spring or long winter}
+  \item{class}{Classification: "Early Spring", "Long Winter", or NA}
 }
 }
 \source{
@@ -20,5 +20,26 @@ class_def1
 }
 \description{
 A table listing early spring/long winter classifications for each prognosticator's city by year. The definition of "early spring" follows previous analyses by NOAA and 538 in classifying a year as "early spring" if the average temperature in February OR March is above the 15-year running average for the location.
+}
+\section{Data Sources}{
+
+Weather data comes from two sources:
+\itemize{
+  \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
+  \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+}
+}
+
+\section{Missing Values (NA)}{
+
+Approximately 16\% of classifications are NA due to:
+\enumerate{
+  \item \strong{Insufficient history for rolling average} (~98\% of NAs): The 15-year rolling average requires 14 prior years of data. For most cities with data starting in 1940, classifications begin in 1954.
+  \item \strong{Missing weather data} (~2\% of NAs): Some early years have gaps in GHCND records (e.g., Punxsutawney 1887-1892, 1906-1910).
+}
+}
+
+\seealso{
+\code{\link{class_def1_data}} for the underlying monthly temperature data
 }
 \keyword{datasets}

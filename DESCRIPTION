@@ -1,7 +1,7 @@
 Package: feb2
 Type: Package
 Title: Groundhog Day Prediction Data and Accuracy Metrics
-Version: 0.2.0
+Version: 0.2.1
 Author: Eric Green
 Maintainer: Eric Green <epgreen@gmail.com>
 Description: Every year on February 2, Groundhog Day, the famous groundhog

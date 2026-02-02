@@ -12,6 +12,22 @@
 #'   \item{tmax_monthly_mean_f_15y}{15-year running average monthly high temperature for each location. Degrees Fahrenheit.}
 #'   \item{class}{Classification: early spring or long winter}
 #' }
+#'
+#' @section Data Sources:
+#' Weather data comes from two sources:
+#' \itemize{
+#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
+#'   \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+#' }
+#'
+#' @section Missing Values (NA):
+#' Classifications may be NA for three reasons:
+#' \enumerate{
+#'   \item \strong{Insufficient history for rolling average}: The 15-year rolling average requires 14 prior years of data. For most cities with data starting in 1940, classifications begin in 1954. For Punxsutawney (data starting 1893), classifications begin in 1925.
+#'   \item \strong{Missing weather data}: Some early years have gaps in GHCND records (e.g., Punxsutawney 1887-1892, 1906-1910).
+#'   \item \strong{Missing temperature for Feb or March}: If either month lacks temperature data, the year cannot be classified.
+#' }
+#'
 #' @source <https://open-meteo.com/en/docs/historical-weather-api>
 "class_def1_data"
 
@@ -23,8 +39,24 @@
 #' \describe{
 #'   \item{prognosticator_city}{Where the prognosticator is located}
 #'   \item{year}{Classification year}
-#'   \item{class}{Classification: early spring or long winter}
+#'   \item{class}{Classification: "Early Spring", "Long Winter", or NA}
 #' }
+#'
+#' @section Data Sources:
+#' Weather data comes from two sources:
+#' \itemize{
+#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
+#'   \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+#' }
+#'
+#' @section Missing Values (NA):
+#' Approximately 16\% of classifications are NA due to:
+#' \enumerate{
+#'   \item \strong{Insufficient history for rolling average} (~98\% of NAs): The 15-year rolling average requires 14 prior years of data. For most cities with data starting in 1940, classifications begin in 1954.
+#'   \item \strong{Missing weather data} (~2\% of NAs): Some early years have gaps in GHCND records (e.g., Punxsutawney 1887-1892, 1906-1910).
+#' }
+#'
+#' @seealso \code{\link{class_def1_data}} for the underlying monthly temperature data
 #' @source <https://open-meteo.com/en/docs/historical-weather-api>
 "class_def1"
 

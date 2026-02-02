@@ -1,3 +1,14 @@
+# feb2 0.2.1
+
+## Bug fixes
+
+* Fixed 15-year rolling average calculation for cities with pre-1940 GHCND data (Punxsutawney, Quarryville). Previously, the rolling average reset at 1940 when switching from GHCND to Open-Meteo data, causing 1940-1953 to have NA classifications. Now the rolling average is calculated on the combined data, providing continuous classifications from 1925 onward.
+
+## Documentation
+
+* Added documentation explaining NA values in `class_def1` and `class_def1_data`
+* Updated README with "Missing Values (NA)" section
+
 # feb2 0.2.0
 
 ## Major changes

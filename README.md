@@ -187,7 +187,7 @@ The `class_def1` dataset currently covers:
 
 - **158 unique cities** (prognosticator locations with valid
   coordinates)
-- **Years 1887-2025** (pre-1940 data from GHCND for Punxsutawney, 1940+
+- **Years 1887-2025** (pre-1940 data from GHCND for Punxsutawney and Quarryville, 1940+
   from Open-Meteo)
 - **~14,000 city-year classifications**
 
@@ -198,8 +198,29 @@ class_def1 %>%
 #> # A tibble: 2 × 2
 #>   class            n
 #>   <chr>        <int>
-#> 1 Early Spring  8742
-#> 2 Long Winter   2681
+#> 1 Early Spring  8762
+#> 2 Long Winter   2689
+```
+
+#### Missing Values (NA)
+
+Approximately 16% of classifications are `NA`. This is expected due to:
+
+1. **Insufficient history for rolling average** (~98% of NAs): The 15-year
+   rolling average requires 14 prior years of data. Since Open-Meteo data
+   begins in 1940, classifications for most cities start in 1954.
+
+2. **Missing weather data** (~2% of NAs): Some early years have gaps in GHCND
+   records (e.g., Punxsutawney 1887-1892 and 1906-1910).
+
+``` r
+class_def1 %>%
+  count(is.na(class))
+#> # A tibble: 2 × 2
+#>   `is.na(class)`     n
+#>   <lgl>          <int>
+#> 1 FALSE          11451
+#> 2 TRUE            2243
 ```
 
 ## Weather Data
