@@ -2,11 +2,13 @@
 
 ## New features
 
-* Added NOAA 20th Century Reanalysis V3 data to fill GHCND gaps (1887-1892, 1906-1910) for Punxsutawney and Quarryville. This extends Punxsutawney Phil's verifiable prediction history back to 1901 (was 1925).
+* Added NOAA 20th Century Reanalysis V3 data (1926-1939) for ALL 163 prognosticator cities. This enables classification for 1940-1953, eliminating 2,184 NA values that previously existed due to the 15-year rolling average requirement.
+
+* Extended Punxsutawney Phil's verifiable prediction history back to 1901 (was 1925) by filling GHCND gaps with 20CR data.
 
 ## Bug fixes
 
-* Fixed 15-year rolling average calculation for cities with pre-1940 GHCND data (Punxsutawney, Quarryville). Previously, the rolling average reset at 1940 when switching from GHCND to Open-Meteo data, causing 1940-1953 to have NA classifications. Now the rolling average is calculated on the combined data.
+* Fixed 15-year rolling average calculation for cities with pre-1940 data. Previously, the rolling average reset at 1940 when switching from GHCND to Open-Meteo data. Now the rolling average is calculated on the combined data.
 
 ## Documentation
 

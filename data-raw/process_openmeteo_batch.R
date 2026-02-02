@@ -44,80 +44,71 @@ openmeteo_monthly <- feb_mar_data %>%
   mutate(yearmo = paste(year, str_pad(month, 2, pad = "0"), sep = "-"))
 
 # =============================================================================
-# Load GHCND Pre-1940 Data and Combine BEFORE Calculating Rolling Average
+# Load Pre-1940 Data: GHCND + 20CR
 # =============================================================================
 
-message("\n=== Loading GHCND pre-1940 data ===\n")
+message("\n=== Loading pre-1940 data sources ===\n")
 
-# Check if backup exists with full GHCND data
+pre1940_monthly <- NULL
+
+# 1. Load GHCND data for Punxsutawney/Quarryville (1893-1939)
 backup_files <- list.files("../data", pattern = "class_def1_data_backup.*\\.rda$", full.names = TRUE)
 if (length(backup_files) > 0) {
-  # Use most recent backup
   backup_file <- sort(backup_files, decreasing = TRUE)[1]
-  message(sprintf("Loading pre-1940 data from: %s", backup_file))
+  message(sprintf("Loading GHCND data from: %s", backup_file))
   load(backup_file)  # loads class_def1_data
 
-  # Extract just the monthly means for pre-1940 (drop old rolling avg and class)
   ghcnd_monthly <- class_def1_data %>%
     filter(year < 1940) %>%
     filter(prognosticator_city %in% c("Punxsutawney, PA", "Quarryville, PA")) %>%
+    filter(!is.na(tmax_monthly_mean_f)) %>%  # Only keep rows with actual data
     select(prognosticator_city, year, month, yearmo, tmax_monthly_mean_f)
 
-  message(sprintf("GHCND pre-1940 records: %d", nrow(ghcnd_monthly)))
-} else {
-  message("No backup file found - skipping pre-1940 data")
-  ghcnd_monthly <- NULL
+  message(sprintf("GHCND records (with data): %d", nrow(ghcnd_monthly)))
+  pre1940_monthly <- ghcnd_monthly
 }
 
-# =============================================================================
-# Load 20CR Data to Fill GHCND Gaps
-# =============================================================================
-
-message("\n=== Loading 20CR data for GHCND gaps ===\n")
-
+# 2. Load 20CR data for ALL cities
 if (file.exists("20cr_monthly.rds")) {
   cr20_monthly <- readRDS("20cr_monthly.rds") %>%
     select(prognosticator_city, year, month, yearmo, tmax_monthly_mean_f)
 
-  message(sprintf("20CR records: %d", nrow(cr20_monthly)))
+  message(sprintf("20CR records: %d cities, %d records",
+                  length(unique(cr20_monthly$prognosticator_city)),
+                  nrow(cr20_monthly)))
 
-  # Fill NA values in GHCND with 20CR data
-  if (!is.null(ghcnd_monthly)) {
-    # Identify rows with NA temperature in GHCND
-    ghcnd_na_keys <- ghcnd_monthly %>%
-      filter(is.na(tmax_monthly_mean_f)) %>%
+  # For Punxsutawney/Quarryville: only use 20CR where GHCND is missing
+  # For all other cities: use all 20CR data
+  if (!is.null(pre1940_monthly)) {
+    # Get keys that already exist in GHCND
+    ghcnd_keys <- pre1940_monthly %>%
       mutate(key = paste(prognosticator_city, year, month, sep = "-")) %>%
       pull(key)
 
-    message(sprintf("GHCND rows with NA temperature: %d", length(ghcnd_na_keys)))
-
-    # Get 20CR data for those gaps
-    cr20_to_use <- cr20_monthly %>%
+    # Filter 20CR to exclude duplicates with GHCND
+    cr20_to_add <- cr20_monthly %>%
       mutate(key = paste(prognosticator_city, year, month, sep = "-")) %>%
-      filter(key %in% ghcnd_na_keys) %>%
+      filter(!key %in% ghcnd_keys) %>%
       select(-key)
 
-    message(sprintf("20CR records filling GHCND NA gaps: %d", nrow(cr20_to_use)))
+    message(sprintf("20CR records to add (non-duplicate): %d", nrow(cr20_to_add)))
 
-    # Remove NA rows from GHCND and replace with 20CR data
-    ghcnd_monthly <- ghcnd_monthly %>%
-      filter(!is.na(tmax_monthly_mean_f)) %>%
-      bind_rows(cr20_to_use) %>%
-      arrange(prognosticator_city, year, month)
-
-    message(sprintf("Combined pre-1940 records (GHCND + 20CR): %d", nrow(ghcnd_monthly)))
+    pre1940_monthly <- bind_rows(pre1940_monthly, cr20_to_add)
   } else {
-    ghcnd_monthly <- cr20_monthly
-    message("Using 20CR data as primary pre-1940 source")
+    pre1940_monthly <- cr20_monthly
   }
+
+  message(sprintf("Combined pre-1940 records: %d", nrow(pre1940_monthly)))
 } else {
-  message("No 20CR data found (20cr_monthly.rds) - run weather_20cr.R first if you want to fill GHCND gaps")
+  message("WARNING: No 20CR data found (20cr_monthly.rds)")
+  message("Run weather_20cr.R to fetch 1926-1939 data for all cities")
+  message("Without this, 1940-1953 will have NA classifications for most cities")
 }
 
 # Combine monthly means FIRST (before rolling average calculation)
-# This ensures the 15-year rolling average carries across the GHCND/Open-Meteo boundary
+# This ensures the 15-year rolling average carries across data source boundaries
 combined_monthly <- bind_rows(
-  ghcnd_monthly,
+  pre1940_monthly,
   openmeteo_monthly
 ) %>%
   arrange(prognosticator_city, year, month)

@@ -1,7 +1,9 @@
 # weather_20cr.R
-# Fetches missing historical weather data from NOAA 20th Century Reanalysis V3
-# Fills gaps in GHCND data for Punxsutawney (1887-1892, 1906-1910) and
-# Quarryville (1887-1893)
+# Fetches historical weather data from NOAA 20th Century Reanalysis V3
+#
+# Two purposes:
+# 1. Fill GHCND gaps for Punxsutawney (1887-1892, 1906-1910) and Quarryville (1887-1893)
+# 2. Provide 1926-1939 data for ALL cities to enable rolling average calculation for 1940+
 
 library(tidyverse)
 library(ncdf4)
@@ -13,53 +15,46 @@ library(ncdf4)
 # OPeNDAP URL for daily max temperature at 2m
 opendap_url <- "http://apdrc.soest.hawaii.edu/dods/public_data/Reanalysis_Data/NOAA_20th_Century/V3/daily/monolevel/tmax_2m"
 
-# Locations and missing years
-locations <- list(
-  list(
-    city = "Punxsutawney, PA",
-    lat = 40.95,
-    lon = -79.0,
-    missing_years = c(1887:1892, 1906:1910)
-  ),
-  list(
-    city = "Quarryville, PA",
-    lat = 39.9,
-    lon = -76.15,
-    missing_years = c(1887:1893)
-  )
-)
+# Load prognosticator cities
+load("../data/prognosticators.rda")
+
+# Get all cities with coordinates
+all_cities <- prognosticators %>%
+  filter(!is.na(prognosticator_lat), !is.na(prognosticator_long)) %>%
+  distinct(prognosticator_city, prognosticator_lat, prognosticator_long) %>%
+  rename(city = prognosticator_city, lat = prognosticator_lat, lon = prognosticator_long)
+
+message(sprintf("Total cities to process: %d", nrow(all_cities)))
+
+# Years to fetch:
+# - 1926-1939 for ALL cities (enables 1940+ rolling average)
+# - 1887-1892, 1906-1910 for Punxsutawney (fills GHCND gaps)
+# - 1887-1893 for Quarryville (fills GHCND gaps)
+years_all_cities <- 1926:1939
+years_punxsutawney_extra <- c(1887:1892, 1906:1910)
+years_quarryville_extra <- 1887:1893
 
 # =============================================================================
 # Helper Functions
 # =============================================================================
 
-#' Convert Kelvin to Fahrenheit
 kelvin_to_fahrenheit <- function(k) {
-
-(k - 273.15) * 9/5 + 32
+  (k - 273.15) * 9/5 + 32
 }
 
-#' Find nearest grid index for a given coordinate
 find_nearest_index <- function(coord_array, target) {
   which.min(abs(coord_array - target))
 }
 
-#' Fetch tmax data for a specific location and year range from 20CR
+#' Fetch tmax data for a specific location and years
 fetch_20cr_tmax <- function(nc, lat_target, lon_target, years, lat_vals, lon_vals, dates) {
 
-  # Convert negative longitude to 0-360 format if needed
+  # Convert negative longitude to 0-360 format
   lon_target_360 <- ifelse(lon_target < 0, lon_target + 360, lon_target)
 
   # Find nearest grid point
   lat_idx <- find_nearest_index(lat_vals, lat_target)
   lon_idx <- find_nearest_index(lon_vals, lon_target_360)
-
-  actual_lat <- lat_vals[lat_idx]
-  actual_lon <- lon_vals[lon_idx]
-  if (actual_lon > 180) actual_lon <- actual_lon - 360
-
-  message(sprintf("  Grid point: %.2f°N, %.2f°E (requested: %.2f°N, %.2f°E)",
-                  actual_lat, actual_lon, lat_target, lon_target))
 
   results <- list()
 
@@ -68,29 +63,21 @@ fetch_20cr_tmax <- function(nc, lat_target, lon_target, years, lat_vals, lon_val
     year_mask <- lubridate::year(dates) == year & lubridate::month(dates) %in% c(2, 3)
     year_dates <- dates[year_mask]
 
-    if (length(year_dates) == 0) {
-      message(sprintf("  Warning: No data for year %d", year))
-      next
-    }
+    if (length(year_dates) == 0) next
 
     time_indices <- which(year_mask)
 
-    # Read data for this location and time range
-    # OPeNDAP subset: [lon, lat, time]
+    # Read data - OPeNDAP subset: [lon, lat, time]
     start <- c(lon_idx, lat_idx, min(time_indices))
     count <- c(1, 1, length(time_indices))
 
     tmax_k <- ncvar_get(nc, "tmax", start = start, count = count)
     tmax_f <- kelvin_to_fahrenheit(tmax_k)
 
-    # Create data frame
-    df <- tibble(
+    results[[as.character(year)]] <- tibble(
       date = year_dates,
       tmax_f = as.numeric(tmax_f)
     )
-
-    results[[as.character(year)]] <- df
-    message(sprintf("  Year %d: %d days", year, nrow(df)))
   }
 
   bind_rows(results)
@@ -100,10 +87,10 @@ fetch_20cr_tmax <- function(nc, lat_target, lon_target, years, lat_vals, lon_val
 # Main Processing
 # =============================================================================
 
-message("=== Fetching data from NOAA 20th Century Reanalysis V3 ===\n")
-message(sprintf("OPeNDAP URL: %s\n", opendap_url))
+message("\n=== Fetching data from NOAA 20th Century Reanalysis V3 ===\n")
+message(sprintf("OPeNDAP URL: %s", opendap_url))
 
-# Open connection to OPeNDAP server
+# Open connection
 message("Opening connection to OPeNDAP server...")
 nc <- nc_open(opendap_url)
 
@@ -112,61 +99,63 @@ lat_vals <- ncvar_get(nc, "lat")
 lon_vals <- ncvar_get(nc, "lon")
 time_vals <- ncvar_get(nc, "time")
 
-# Time is in days since 1-1-1 (year 1 AD)
-# R's Date system starts at 1970-01-01, so we need to convert carefully
-# Days from year 1 to 1970-01-01 is approximately 719528 days
-time_origin <- as.Date("0001-01-01")
-# Use a workaround since R doesn't handle year 1 well
-# Convert by calculating offset from a known date
-# 1836-01-01 corresponds to approximately day 670221 in this system
-# Let's use: date = time_vals - 670221 + as.Date("1836-01-01")
+# Convert time (days since year 1) to dates
 reference_day <- 670221  # corresponds to 1836-01-01
 reference_date <- as.Date("1836-01-01")
-
-# Convert time values to dates
 dates <- reference_date + (time_vals - reference_day)
 
-message(sprintf("Lat range: %.1f to %.1f", min(lat_vals), max(lat_vals)))
-message(sprintf("Lon range: %.1f to %.1f", min(lon_vals), max(lon_vals)))
-message(sprintf("Time range: %s to %s\n", min(dates), max(dates)))
+message(sprintf("Data range: %s to %s", min(dates), max(dates)))
+message(sprintf("Grid: %d lat x %d lon", length(lat_vals), length(lon_vals)))
 
-# Fetch data for each location
+# Process all cities
 all_data <- list()
+n_cities <- nrow(all_cities)
 
-for (loc in locations) {
-  message(sprintf("Fetching data for %s...", loc$city))
-  message(sprintf("  Missing years: %s", paste(loc$missing_years, collapse = ", ")))
+for (i in seq_len(n_cities)) {
+  city_info <- all_cities[i, ]
+  city <- city_info$city
 
-  data <- fetch_20cr_tmax(
-    nc = nc,
-    lat_target = loc$lat,
-    lon_target = loc$lon,
-    years = loc$missing_years,
-    lat_vals = lat_vals,
-    lon_vals = lon_vals,
-    dates = dates
-  )
+  # Determine which years to fetch for this city
+  if (grepl("Punxsutawney", city)) {
+    years_to_fetch <- sort(unique(c(years_all_cities, years_punxsutawney_extra)))
+  } else if (grepl("Quarryville", city)) {
+    years_to_fetch <- sort(unique(c(years_all_cities, years_quarryville_extra)))
+  } else {
+    years_to_fetch <- years_all_cities
+  }
 
-  data$prognosticator_city <- loc$city
-  all_data[[loc$city]] <- data
+  message(sprintf("[%d/%d] %s (%.2f, %.2f) - years %d-%d",
+                  i, n_cities, city, city_info$lat, city_info$lon,
+                  min(years_to_fetch), max(years_to_fetch)))
 
-  message(sprintf("  Retrieved %d daily records\n", nrow(data)))
+  tryCatch({
+    data <- fetch_20cr_tmax(
+      nc = nc,
+      lat_target = city_info$lat,
+      lon_target = city_info$lon,
+      years = years_to_fetch,
+      lat_vals = lat_vals,
+      lon_vals = lon_vals,
+      dates = dates
+    )
+
+    if (nrow(data) > 0) {
+      data$prognosticator_city <- city
+      all_data[[city]] <- data
+    }
+  }, error = function(e) {
+    message(sprintf("  ERROR: %s", e$message))
+  })
 }
 
-# Close connection
 nc_close(nc)
 
 # Combine all data
-cr20_daily <- bind_rows(all_data)
-
-if (nrow(cr20_daily) == 0) {
-  stop("No data retrieved! Check the OPeNDAP connection and date ranges.")
-}
-
-cr20_daily <- cr20_daily %>%
+cr20_daily <- bind_rows(all_data) %>%
   select(prognosticator_city, date, tmax_f)
 
-message(sprintf("Total daily records: %d", nrow(cr20_daily)))
+message(sprintf("\nTotal daily records: %d", nrow(cr20_daily)))
+message(sprintf("Cities with data: %d", length(unique(cr20_daily$prognosticator_city))))
 
 # =============================================================================
 # Calculate Monthly Means
@@ -188,8 +177,14 @@ cr20_monthly <- cr20_daily %>%
   ) %>%
   mutate(yearmo = paste(year, str_pad(month, 2, pad = "0"), sep = "-"))
 
-message("Monthly means calculated:")
-print(cr20_monthly)
+message(sprintf("Monthly records: %d", nrow(cr20_monthly)))
+message(sprintf("Year range: %d to %d", min(cr20_monthly$year), max(cr20_monthly$year)))
+
+# Summary by year
+message("\nRecords per year:")
+cr20_monthly %>%
+  count(year) %>%
+  print(n = 100)
 
 # =============================================================================
 # Save Results
