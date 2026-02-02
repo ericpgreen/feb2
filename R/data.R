@@ -16,9 +16,9 @@
 #' @section Data Sources:
 #' Weather data comes from three sources:
 #' \itemize{
-#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
-#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA
-#'   \item \strong{1887-1892, 1906-1910}: NOAA 20th Century Reanalysis V3 (fills GHCND gaps)
+#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 165 prognosticator cities
+#'   \item \strong{1926-1939}: NOAA 20th Century Reanalysis V3 for all 165 cities (enables 1940+ rolling average)
+#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA (supplements 20CR where available)
 #' }
 #'
 #' @section Missing Values (NA):
@@ -46,9 +46,9 @@
 #' @section Data Sources:
 #' Weather data comes from three sources:
 #' \itemize{
-#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
-#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA
-#'   \item \strong{1887-1892, 1906-1910}: NOAA 20th Century Reanalysis V3 (fills GHCND gaps)
+#'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 165 prognosticator cities
+#'   \item \strong{1926-1939}: NOAA 20th Century Reanalysis V3 for all 165 cities (enables 1940+ rolling average)
+#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA (supplements 20CR where available)
 #' }
 #'
 #' @section Missing Values (NA):

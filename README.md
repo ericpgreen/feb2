@@ -185,11 +185,9 @@ say let’s evaluate their powers of prognostication using local data.[^3]
 
 The `class_def1` dataset currently covers:
 
-- **158 unique cities** (prognosticator locations with valid
-  coordinates)
-- **Years 1887-2025** (pre-1940 data from GHCND for Punxsutawney and Quarryville, 1940+
-  from Open-Meteo)
-- **~14,000 city-year classifications**
+- **165 unique cities** (prognosticator locations with valid coordinates)
+- **Years 1887-2025** (20CR + GHCND for pre-1940, Open-Meteo for 1940+)
+- **~13,700 city-year classifications** (all cities classified 1940+)
 
 ``` r
 class_def1 %>%
@@ -198,20 +196,19 @@ class_def1 %>%
 #> # A tibble: 2 × 2
 #>   class            n
 #>   <chr>        <int>
-#> 1 Early Spring  8762
-#> 2 Long Winter   2689
+#> 1 Early Spring 10488
+#> 2 Long Winter   3178
 ```
 
 #### Missing Values (NA)
 
-Approximately 16% of classifications are `NA`. This is expected due to:
+Approximately 14% of classifications are `NA`. These are all in the pre-1940 period due to:
 
-1. **Insufficient history for rolling average** (~98% of NAs): The 15-year
-   rolling average requires 14 prior years of data. Since Open-Meteo data
-   begins in 1940, classifications for most cities start in 1954.
+1. **Insufficient history for rolling average**: The 15-year rolling average requires 14 prior years of data. Since 20CR data begins in 1926 for most cities, classifications start in 1940.
 
-2. **Missing weather data** (~2% of NAs): Some early years have gaps in GHCND
-   records (e.g., Punxsutawney 1887-1892 and 1906-1910).
+2. **Early Punxsutawney years** (1887-1900): The first 14 years of Punxsutawney's record cannot be classified.
+
+**All cities have complete classifications from 1940 onward.**
 
 ``` r
 class_def1 %>%
@@ -219,17 +216,17 @@ class_def1 %>%
 #> # A tibble: 2 × 2
 #>   `is.na(class)`     n
 #>   <lgl>          <int>
-#> 1 FALSE          11451
-#> 2 TRUE            2243
+#> 1 FALSE          13666
+#> 2 TRUE            2310
 ```
 
 ## Weather Data
 
 Weather data comes from three sources:
 
-1. **[Open-Meteo ERA5](https://open-meteo.com/en/docs/historical-weather-api)** (1940-present): Reanalysis data for all 158 prognosticator cities
-2. **NOAA GHCND** (1893-1939): Historical weather station data for Punxsutawney and Quarryville
-3. **[NOAA 20th Century Reanalysis V3](https://psl.noaa.gov/data/20thC_Rean/)** (1887-1892, 1906-1910): Fills gaps in GHCND data
+1. **[Open-Meteo ERA5](https://open-meteo.com/en/docs/historical-weather-api)** (1940-present): Reanalysis data for all 165 prognosticator cities
+2. **[NOAA 20th Century Reanalysis V3](https://psl.noaa.gov/data/20thC_Rean/)** (1926-1939): Provides pre-1940 data for all 165 cities, enabling the 15-year rolling average calculation for 1940+
+3. **NOAA GHCND** (1893-1939): Historical weather station data for Punxsutawney and Quarryville (supplements 20CR where available)
 
 Each prognosticator's city is geocoded to coordinates, and daily maximum
 temperatures are retrieved directly for those coordinates.
