@@ -225,14 +225,14 @@ class_def1 %>%
 
 ## Weather Data
 
-Weather data comes from [Open-Meteo’s Historical Weather
-API](https://open-meteo.com/en/docs/historical-weather-api), which
-provides ERA5 reanalysis data back to 1940. Each prognosticator’s city
-is geocoded to coordinates, and daily maximum temperatures are retrieved
-directly for those coordinates.
+Weather data comes from three sources:
 
-For Punxsutawney Phil’s predictions from 1887-1939 (before Open-Meteo
-coverage), weather data comes from nearby NOAA GHCND weather stations.
+1. **[Open-Meteo ERA5](https://open-meteo.com/en/docs/historical-weather-api)** (1940-present): Reanalysis data for all 158 prognosticator cities
+2. **NOAA GHCND** (1893-1939): Historical weather station data for Punxsutawney and Quarryville
+3. **[NOAA 20th Century Reanalysis V3](https://psl.noaa.gov/data/20thC_Rean/)** (1887-1892, 1906-1910): Fills gaps in GHCND data
+
+Each prognosticator's city is geocoded to coordinates, and daily maximum
+temperatures are retrieved directly for those coordinates.
 
 The `weather_stations_ghcnd` and `weather_stations_isd` datasets contain
 historical weather station information and may be useful for

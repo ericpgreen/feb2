@@ -23,10 +23,11 @@ A table listing early spring/long winter classifications for each prognosticator
 }
 \section{Data Sources}{
 
-Weather data comes from two sources:
+Weather data comes from three sources:
 \itemize{
   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
-  \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+  \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA
+  \item \strong{1887-1892, 1906-1910}: NOAA 20th Century Reanalysis V3 (fills GHCND gaps)
 }
 }
 

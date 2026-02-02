@@ -14,14 +14,15 @@
 #' }
 #'
 #' @section Data Sources:
-#' Weather data comes from two sources:
+#' Weather data comes from three sources:
 #' \itemize{
 #'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
-#'   \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA
+#'   \item \strong{1887-1892, 1906-1910}: NOAA 20th Century Reanalysis V3 (fills GHCND gaps)
 #' }
 #'
 #' @section Missing Values (NA):
-#' Classifications may be NA for three reasons:
+#' Classifications may be NA for two reasons:
 #' \enumerate{
 #'   \item \strong{Insufficient history for rolling average}: The 15-year rolling average requires 14 prior years of data. For most cities with data starting in 1940, classifications begin in 1954. For Punxsutawney (data starting 1893), classifications begin in 1925.
 #'   \item \strong{Missing weather data}: Some early years have gaps in GHCND records (e.g., Punxsutawney 1887-1892, 1906-1910).
@@ -43,10 +44,11 @@
 #' }
 #'
 #' @section Data Sources:
-#' Weather data comes from two sources:
+#' Weather data comes from three sources:
 #' \itemize{
 #'   \item \strong{1940-present}: Open-Meteo ERA5 reanalysis data for all 158 prognosticator cities
-#'   \item \strong{Pre-1940}: NOAA GHCND historical data for Punxsutawney, PA and Quarryville, PA only
+#'   \item \strong{1893-1939}: NOAA GHCND historical weather station data for Punxsutawney, PA and Quarryville, PA
+#'   \item \strong{1887-1892, 1906-1910}: NOAA 20th Century Reanalysis V3 (fills GHCND gaps)
 #' }
 #'
 #' @section Missing Values (NA):

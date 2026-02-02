@@ -69,6 +69,51 @@ if (length(backup_files) > 0) {
   ghcnd_monthly <- NULL
 }
 
+# =============================================================================
+# Load 20CR Data to Fill GHCND Gaps
+# =============================================================================
+
+message("\n=== Loading 20CR data for GHCND gaps ===\n")
+
+if (file.exists("20cr_monthly.rds")) {
+  cr20_monthly <- readRDS("20cr_monthly.rds") %>%
+    select(prognosticator_city, year, month, yearmo, tmax_monthly_mean_f)
+
+  message(sprintf("20CR records: %d", nrow(cr20_monthly)))
+
+  # Fill NA values in GHCND with 20CR data
+  if (!is.null(ghcnd_monthly)) {
+    # Identify rows with NA temperature in GHCND
+    ghcnd_na_keys <- ghcnd_monthly %>%
+      filter(is.na(tmax_monthly_mean_f)) %>%
+      mutate(key = paste(prognosticator_city, year, month, sep = "-")) %>%
+      pull(key)
+
+    message(sprintf("GHCND rows with NA temperature: %d", length(ghcnd_na_keys)))
+
+    # Get 20CR data for those gaps
+    cr20_to_use <- cr20_monthly %>%
+      mutate(key = paste(prognosticator_city, year, month, sep = "-")) %>%
+      filter(key %in% ghcnd_na_keys) %>%
+      select(-key)
+
+    message(sprintf("20CR records filling GHCND NA gaps: %d", nrow(cr20_to_use)))
+
+    # Remove NA rows from GHCND and replace with 20CR data
+    ghcnd_monthly <- ghcnd_monthly %>%
+      filter(!is.na(tmax_monthly_mean_f)) %>%
+      bind_rows(cr20_to_use) %>%
+      arrange(prognosticator_city, year, month)
+
+    message(sprintf("Combined pre-1940 records (GHCND + 20CR): %d", nrow(ghcnd_monthly)))
+  } else {
+    ghcnd_monthly <- cr20_monthly
+    message("Using 20CR data as primary pre-1940 source")
+  }
+} else {
+  message("No 20CR data found (20cr_monthly.rds) - run weather_20cr.R first if you want to fill GHCND gaps")
+}
+
 # Combine monthly means FIRST (before rolling average calculation)
 # This ensures the 15-year rolling average carries across the GHCND/Open-Meteo boundary
 combined_monthly <- bind_rows(
