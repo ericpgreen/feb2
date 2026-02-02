@@ -2,7 +2,7 @@
 
 ## New features
 
-* Added NOAA 20th Century Reanalysis V3 data (1926-1939) for ALL 163 prognosticator cities. This enables classification for 1940-1953, eliminating 2,184 NA values that previously existed due to the 15-year rolling average requirement.
+* Added NOAA 20th Century Reanalysis V3 data (1926-1939) for all 165 prognosticator cities. This enables classification for 1940 onward, eliminating 2,212 NA values that previously existed due to the 15-year rolling average requirement.
 
 * Extended Punxsutawney Phil's verifiable prediction history back to 1901 (was 1925) by filling GHCND gaps with 20CR data.
 
