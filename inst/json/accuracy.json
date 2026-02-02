@@ -478,9 +478,9 @@
   {
     "prognosticator_slug": "Octoraro-Orphie",
     "prognosticator_name": "Octoraro Orphie",
-    "total_predictions": 81,
-    "correct_predictions": 61,
-    "accuracy": 75.3
+    "total_predictions": 94,
+    "correct_predictions": 74,
+    "accuracy": 78.7
   },
   {
     "prognosticator_slug": "Oil-Springs-Ollie",
@@ -562,9 +562,9 @@
   {
     "prognosticator_slug": "Punxsutawney-Phil",
     "prognosticator_name": "Punxsutawney Phil",
-    "total_predictions": 87,
-    "correct_predictions": 71,
-    "accuracy": 81.6
+    "total_predictions": 123,
+    "correct_predictions": 105,
+    "accuracy": 85.4
   },
   {
     "prognosticator_slug": "Queen-Charlotte",
