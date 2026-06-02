@@ -70,6 +70,11 @@
     "class": null
   },
   {
+    "prognosticator_city": "02",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Albertville, AL",
     "year": 1926,
     "class": null
@@ -570,6 +575,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Albertville, AL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Alton, IL",
     "year": 1926,
     "class": null
@@ -1070,6 +1080,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Alton, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Apex, NC",
     "year": 1926,
     "class": null
@@ -1570,6 +1585,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Apex, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Asheville, NC",
     "year": 1926,
     "class": null
@@ -2070,6 +2090,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Asheville, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Ashland, OH",
     "year": 1926,
     "class": null
@@ -2570,6 +2595,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Ashland, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Athens, GA",
     "year": 1926,
     "class": null
@@ -3070,6 +3100,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Athens, GA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Athens, WV",
     "year": 1926,
     "class": null
@@ -3570,6 +3605,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Athens, WV",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Augusta, ME",
     "year": 1926,
     "class": null
@@ -4070,6 +4110,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Augusta, ME",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Aurora, CO",
     "year": 1926,
     "class": null
@@ -4570,6 +4615,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Aurora, CO",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Babylon, NY",
     "year": 1926,
     "class": null
@@ -5070,6 +5120,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Babylon, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Baltimore, MD",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Balzac, AB",
     "year": 1926,
     "class": null
@@ -5570,6 +5630,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Balzac, AB",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Barrington Passage, NS",
     "year": 1926,
     "class": null
@@ -6070,6 +6135,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Barrington Passage, NS",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Beaumont, TX",
     "year": 1926,
     "class": null
@@ -6570,6 +6640,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Beaumont, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Bee Cave, TX",
     "year": 1926,
     "class": null
@@ -7070,6 +7145,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Bee Cave, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Birmingham, AL",
     "year": 1926,
     "class": null
@@ -7570,6 +7650,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Birmingham, AL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Boise, ID",
     "year": 1926,
     "class": null
@@ -8070,6 +8155,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Boise, ID",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Boulder, CO",
     "year": 1926,
     "class": null
@@ -8570,6 +8660,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Boulder, CO",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Brevard, NC",
     "year": 1926,
     "class": null
@@ -9070,6 +9165,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Brevard, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Bridgeport, CT",
     "year": 1926,
     "class": null
@@ -9570,6 +9670,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Bridgeport, CT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Bridgewater, NJ",
     "year": 1926,
     "class": null
@@ -10070,6 +10175,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Bridgewater, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Bristol, WI",
     "year": 1926,
     "class": null
@@ -10570,6 +10680,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Bristol, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Brookfield, IL",
     "year": 1926,
     "class": null
@@ -11070,6 +11185,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Brookfield, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Buckeye Lake, OH",
     "year": 1926,
     "class": null
@@ -11570,6 +11690,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Buckeye Lake, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Buda, TX",
     "year": 1926,
     "class": null
@@ -12070,6 +12195,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Buda, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Buffalo, NY",
     "year": 1926,
     "class": null
@@ -12570,6 +12700,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Buffalo, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Cape Coral, FL",
     "year": 1926,
     "class": null
@@ -13070,6 +13205,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Cape Coral, FL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Cape May Court House, NJ",
     "year": 1926,
     "class": null
@@ -13570,6 +13710,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Cape May Court House, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Charlotte, NC",
     "year": 1926,
     "class": null
@@ -14070,6 +14215,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Charlotte, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Chattanooga, TN",
     "year": 1926,
     "class": null
@@ -14570,6 +14720,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Chattanooga, TN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Chicago, IL",
     "year": 1926,
     "class": null
@@ -15070,6 +15225,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Chicago, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Chimney Rock, NC",
     "year": 1926,
     "class": null
@@ -15570,6 +15730,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Chimney Rock, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Cincinnati, OH",
     "year": 1926,
     "class": null
@@ -16070,6 +16235,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Cincinnati, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Cleveland, GA",
     "year": 1926,
     "class": null
@@ -16570,6 +16740,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Cleveland, GA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Cleveland, OH",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Colorado Springs, CO",
     "year": 1926,
     "class": null
@@ -17070,6 +17250,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Colorado Springs, CO",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Columbus, NC",
     "year": 1926,
     "class": null
@@ -17570,6 +17755,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Columbus, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Concord, OH",
     "year": 1926,
     "class": null
@@ -18070,6 +18260,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Concord, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Cumberland, MD",
     "year": 1926,
     "class": null
@@ -18570,6 +18765,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Cumberland, MD",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Dallas, TX",
     "year": 1926,
     "class": null
@@ -19070,6 +19270,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Dallas, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Dayton, OH",
     "year": 1926,
     "class": null
@@ -19570,6 +19775,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Dayton, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Des Moines, IA",
     "year": 1926,
     "class": null
@@ -20070,6 +20280,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Des Moines, IA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Dover, PA",
     "year": 1926,
     "class": null
@@ -20570,6 +20785,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Dover, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Dow, IL",
     "year": 1926,
     "class": null
@@ -21070,6 +21290,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Dow, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Duluth, MN",
     "year": 1926,
     "class": null
@@ -21570,6 +21795,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Duluth, MN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Dunkirk, NY",
     "year": 1926,
     "class": null
@@ -22070,6 +22300,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Dunkirk, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Eastford, CT",
     "year": 1926,
     "class": null
@@ -22570,6 +22805,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Eastford, CT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Ephrata, PA",
     "year": 1926,
     "class": null
@@ -23070,6 +23310,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Ephrata, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "French Creek, WV",
     "year": 1926,
     "class": null
@@ -23570,6 +23815,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "French Creek, WV",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Fresno, CA",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Garner, NC",
     "year": 1926,
     "class": null
@@ -24067,6 +24322,11 @@
   {
     "prognosticator_city": "Garner, NC",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Garner, NC",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -24140,6 +24400,11 @@
     "class": null
   },
   {
+    "prognosticator_city": "Gastonia, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Graysville, AL",
     "year": 1926,
     "class": null
@@ -24640,6 +24905,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Graysville, AL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Great Neck, NY",
     "year": 1926,
     "class": null
@@ -25140,6 +25410,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Great Neck, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Green Bay, WI",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Greenfield, WI",
     "year": 1926,
     "class": null
@@ -25640,6 +25920,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Greenfield, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Haddon Township, NJ",
     "year": 1926,
     "class": null
@@ -26140,6 +26425,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Haddon Township, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Hampton Bays, NY",
     "year": 1926,
     "class": null
@@ -26640,6 +26930,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Hampton Bays, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Hanna City, IL",
     "year": 1926,
     "class": null
@@ -27140,6 +27435,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Hanna City, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Hanover, PA",
     "year": 1926,
     "class": null
@@ -27640,6 +27940,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Hanover, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Harleysville, PA",
     "year": 1926,
     "class": null
@@ -28140,6 +28445,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Harleysville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Harrisburg, PA",
     "year": 1926,
     "class": null
@@ -28640,6 +28950,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Harrisburg, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Hastings, NE",
     "year": 1926,
     "class": null
@@ -29140,6 +29455,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Hastings, NE",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Holland, OH",
     "year": 1926,
     "class": null
@@ -29640,6 +29960,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Holland, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Holtsville, NY",
     "year": 1926,
     "class": null
@@ -30140,6 +30465,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Holtsville, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Hope, IN",
     "year": 1926,
     "class": null
@@ -30640,6 +30970,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Hope, IN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Houston, TX",
     "year": 1926,
     "class": null
@@ -31140,6 +31475,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Houston, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Howell, MI",
     "year": 1926,
     "class": null
@@ -31637,6 +31977,11 @@
   {
     "prognosticator_city": "Howell, MI",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Howell, MI",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -31708,6 +32053,11 @@
     "prognosticator_city": "Hurleyville, NY",
     "year": 1939,
     "class": null
+  },
+  {
+    "prognosticator_city": "Hurleyville, NY",
+    "year": 2026,
+    "class": "Early Spring"
   },
   {
     "prognosticator_city": "IL",
@@ -32280,6 +32630,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Indianapolis, IN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Jackson, GA",
     "year": 1926,
     "class": null
@@ -32780,6 +33135,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Jackson, GA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Jacksonville, FL",
     "year": 1926,
     "class": null
@@ -33280,6 +33640,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Jacksonville, FL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Jeffersonville, IN",
     "year": 1926,
     "class": null
@@ -33777,6 +34142,11 @@
   {
     "prognosticator_city": "Jeffersonville, IN",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Jeffersonville, IN",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -33850,6 +34220,11 @@
     "class": null
   },
   {
+    "prognosticator_city": "Jessup, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Kansas City, MO",
     "year": 1926,
     "class": null
@@ -34350,6 +34725,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Kansas City, MO",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Katonah, NY",
     "year": 1926,
     "class": null
@@ -34850,6 +35230,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Katonah, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Kresgeville, PA",
     "year": 1926,
     "class": null
@@ -35350,6 +35735,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Kresgeville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Kutztown, PA",
     "year": 1926,
     "class": null
@@ -35850,6 +36240,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Kutztown, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lancaster, OH",
     "year": 1926,
     "class": null
@@ -36350,6 +36745,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lancaster, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lancaster, PA",
     "year": 1926,
     "class": null
@@ -36850,6 +37250,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lancaster, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lander, WY",
     "year": 1926,
     "class": null
@@ -37350,6 +37755,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lander, WY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Landing, NJ",
     "year": 1926,
     "class": null
@@ -37850,6 +38260,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Landing, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lawrenceville, PA",
     "year": 1926,
     "class": null
@@ -38350,6 +38765,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lawrenceville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Leominster, MA",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Lewisburg, OH",
     "year": 1926,
     "class": null
@@ -38850,6 +39275,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lewisburg, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lincoln, MA",
     "year": 1926,
     "class": null
@@ -39350,6 +39780,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lincoln, MA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lititz, PA",
     "year": 1926,
     "class": null
@@ -39850,6 +40285,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lititz, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lubbock, TX",
     "year": 1926,
     "class": null
@@ -40350,6 +40790,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Lubbock, TX",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Lyndon, VT",
     "year": 1926,
     "class": null
@@ -40847,6 +41292,11 @@
   {
     "prognosticator_city": "Lyndon, VT",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Lyndon, VT",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -41420,6 +41870,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Madoc, ON",
+    "year": 2026,
+    "class": "Long Winter"
+  },
+  {
     "prognosticator_city": "Malverne, NY",
     "year": 1926,
     "class": null
@@ -41920,6 +42375,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Malverne, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Manchester, CT",
     "year": 1926,
     "class": null
@@ -42420,6 +42880,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Manchester, CT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Marietta, PA",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Marion, OH",
     "year": 1926,
     "class": null
@@ -42920,6 +43390,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Marion, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Medicine Park, OK",
     "year": 1926,
     "class": null
@@ -43420,6 +43895,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Medicine Park, OK",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Melbourne, ON",
     "year": 1926,
     "class": null
@@ -43920,6 +44400,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Melbourne, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Middletown, VA",
     "year": 1926,
     "class": null
@@ -44420,6 +44905,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Middletown, VA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Mile Square, VT",
     "year": 1926,
     "class": null
@@ -44920,6 +45410,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Mile Square, VT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Millersville, PA",
     "year": 1926,
     "class": null
@@ -45420,6 +45915,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Millersville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Milltown, NJ",
     "year": 1926,
     "class": null
@@ -45920,6 +46420,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Milltown, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Milwaukee, WI",
     "year": 1926,
     "class": null
@@ -46420,6 +46925,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Milwaukee, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Mount Joy, PA",
     "year": 1926,
     "class": null
@@ -46920,6 +47430,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Mount Joy, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Mount Washington, KY",
     "year": 1926,
     "class": null
@@ -47420,6 +47935,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Mount Washington, KY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Mount Wolf, PA",
     "year": 1926,
     "class": null
@@ -47920,6 +48440,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Mount Wolf, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Mt. Gretna, PA",
     "year": 1926,
     "class": null
@@ -48420,6 +48945,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Mt. Gretna, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Munster, IN",
     "year": 1926,
     "class": null
@@ -48920,6 +49450,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Munster, IN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Myerstown, PA",
     "year": 1926,
     "class": null
@@ -49420,6 +49955,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Myerstown, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Nanaimo, BC",
     "year": 1926,
     "class": null
@@ -49920,6 +50460,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Nanaimo, BC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Nantucket, MA",
     "year": 1926,
     "class": null
@@ -50420,6 +50965,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Nantucket, MA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "New Iberia, LA",
     "year": 1926,
     "class": null
@@ -50920,6 +51470,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "New Iberia, LA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "New Orleans, LA",
     "year": 1926,
     "class": null
@@ -51420,6 +51975,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "New Orleans, LA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "New York City, NY",
     "year": 1926,
     "class": null
@@ -51920,6 +52480,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "New York City, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Newport News, VA",
     "year": 1926,
     "class": null
@@ -52420,6 +52985,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Newport News, VA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Oconomowoc, WI",
     "year": 1926,
     "class": null
@@ -52920,6 +53490,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Oconomowoc, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Oil Springs, ON",
     "year": 1926,
     "class": null
@@ -53420,6 +53995,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Oil Springs, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Oklahoma City, OK",
     "year": 1926,
     "class": null
@@ -53920,6 +54500,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Oklahoma City, OK",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Oromocto, NB",
     "year": 1926,
     "class": null
@@ -54420,6 +55005,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Oromocto, NB",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Oxford, MI",
     "year": 1926,
     "class": null
@@ -54917,6 +55507,11 @@
   {
     "prognosticator_city": "Oxford, MI",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Oxford, MI",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -55490,6 +56085,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Pelham, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Pend Oreille County, WA",
     "year": 1926,
     "class": null
@@ -55990,6 +56590,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Pend Oreille County, WA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Pennsburg, PA",
     "year": 1926,
     "class": null
@@ -56490,6 +57095,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Pennsburg, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Philadelphia, PA",
     "year": 1926,
     "class": null
@@ -56990,6 +57600,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Philadelphia, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Pine Grove, PA",
     "year": 1926,
     "class": null
@@ -57490,6 +58105,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Pine Grove, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Portage la Prairie, MB",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Portland, OR",
     "year": 1926,
     "class": null
@@ -57987,6 +58612,11 @@
   {
     "prognosticator_city": "Portland, OR",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Portland, OR",
+    "year": 2026,
     "class": "Early Spring"
   },
   {
@@ -58685,6 +59315,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Punxsutawney, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Quarryville, PA",
     "year": 1887,
     "class": null
@@ -59380,6 +60015,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Quarryville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Queens, NY",
     "year": 1926,
     "class": null
@@ -59880,6 +60520,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Queens, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Quincy, CA",
     "year": 1926,
     "class": null
@@ -60380,6 +61025,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Quincy, CA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Quogue, NY",
     "year": 1926,
     "class": null
@@ -60880,6 +61530,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Quogue, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Racine, WI",
     "year": 1926,
     "class": null
@@ -61380,6 +62035,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Racine, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Raleigh, NC",
     "year": 1926,
     "class": null
@@ -61880,6 +62540,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Raleigh, NC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Reading, PA",
     "year": 1926,
     "class": null
@@ -62380,6 +63045,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Reading, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Roxbury, NJ",
     "year": 1926,
     "class": null
@@ -62880,6 +63550,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Roxbury, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Saint Andrews, NB",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Saint-Félicien, QC",
     "year": 1926,
     "class": null
@@ -63380,6 +64060,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Saint-Félicien, QC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Schnecksville, PA",
     "year": 1926,
     "class": null
@@ -63880,6 +64565,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Schnecksville, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Seattle, WA",
     "year": 1926,
     "class": null
@@ -64380,6 +65070,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Seattle, WA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Sewell, NJ",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Shillington, PA",
     "year": 1926,
     "class": null
@@ -64880,6 +65580,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Shillington, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Shubenacadie, NS",
     "year": 1926,
     "class": null
@@ -65380,6 +66085,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Shubenacadie, NS",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Smithtown, NY",
     "year": 1926,
     "class": null
@@ -65880,6 +66590,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Smithtown, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Snohomish, WA",
     "year": 1926,
     "class": null
@@ -66380,6 +67095,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Snohomish, WA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "South Bend, IN",
     "year": 1926,
     "class": null
@@ -66880,6 +67600,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "South Bend, IN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "St. Louis, MO",
     "year": 1926,
     "class": null
@@ -67380,6 +68105,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "St. Louis, MO",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Staten Island, NY",
     "year": 1926,
     "class": null
@@ -67880,6 +68610,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Staten Island, NY",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Stephens City, VA",
     "year": 1926,
     "class": null
@@ -68380,6 +69115,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Stephens City, VA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Stevensville, MT",
     "year": 1926,
     "class": null
@@ -68880,6 +69620,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Stevensville, MT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Sun Prairie, WI",
     "year": 1926,
     "class": null
@@ -69380,6 +70125,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Sun Prairie, WI",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Sunset City, UT",
     "year": 1926,
     "class": null
@@ -69880,6 +70630,11 @@
     "class": "Long Winter"
   },
   {
+    "prognosticator_city": "Sunset City, UT",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Tacoma, WA",
     "year": 1926,
     "class": null
@@ -70380,6 +71135,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Tacoma, WA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Toledo, OH",
     "year": 1926,
     "class": null
@@ -70880,6 +71640,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Toledo, OH",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Toronto, ON",
     "year": 1926,
     "class": null
@@ -71380,6 +72145,16 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Toronto, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Trenton, GA",
+    "year": 2026,
+    "class": null
+  },
+  {
     "prognosticator_city": "Unadilla, NE",
     "year": 1926,
     "class": null
@@ -71880,6 +72655,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Unadilla, NE",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Val-d'Espoir, QC",
     "year": 1926,
     "class": null
@@ -72380,6 +73160,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Val-d'Espoir, QC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Vernon, BC",
     "year": 1926,
     "class": null
@@ -72880,6 +73665,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Vernon, BC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Wantage, NJ",
     "year": 1926,
     "class": null
@@ -73380,6 +74170,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Wantage, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Warkworth, ON",
     "year": 1926,
     "class": null
@@ -73880,6 +74675,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Warkworth, ON",
+    "year": 2026,
+    "class": "Long Winter"
+  },
+  {
     "prognosticator_city": "Washington, DC",
     "year": 1926,
     "class": null
@@ -74380,6 +75180,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Washington, DC",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "West Dundee, IL",
     "year": 1926,
     "class": null
@@ -74880,6 +75685,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "West Dundee, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "West Orange, NJ",
     "year": 1926,
     "class": null
@@ -75380,6 +76190,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "West Orange, NJ",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "West Palm Beach, FL",
     "year": 1926,
     "class": null
@@ -75880,6 +76695,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "West Palm Beach, FL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Wiarton, ON",
     "year": 1926,
     "class": null
@@ -76380,6 +77200,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Wiarton, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Winnipeg, MB",
     "year": 1926,
     "class": null
@@ -76880,6 +77705,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Winnipeg, MB",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Woodburn, IN",
     "year": 1926,
     "class": null
@@ -77380,6 +78210,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Woodburn, IN",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Woodstock, IL",
     "year": 1926,
     "class": null
@@ -77880,6 +78715,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Woodstock, IL",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Woodstock, ON",
     "year": 1926,
     "class": null
@@ -78380,6 +79220,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Woodstock, ON",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Worcester, MA",
     "year": 1926,
     "class": null
@@ -78880,6 +79725,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "Worcester, MA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "York, PA",
     "year": 1926,
     "class": null
@@ -79380,6 +80230,11 @@
     "class": "Early Spring"
   },
   {
+    "prognosticator_city": "York, PA",
+    "year": 2026,
+    "class": "Early Spring"
+  },
+  {
     "prognosticator_city": "Zanesville, OH",
     "year": 1926,
     "class": null
@@ -79877,6 +80732,11 @@
   {
     "prognosticator_city": "Zanesville, OH",
     "year": 2025,
+    "class": "Early Spring"
+  },
+  {
+    "prognosticator_city": "Zanesville, OH",
+    "year": 2026,
     "class": "Early Spring"
   }
 ]

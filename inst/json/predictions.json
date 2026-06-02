@@ -1541,14 +1541,14 @@
   },
   {
     "prognosticator_name": "Chuckles",
-    "prognosticator_slug": "St-Louis-Chuckles",
+    "prognosticator_slug": "Chuckles",
     "year": 1983,
     "prediction": "Early Spring",
     "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Chuckles",
-    "prognosticator_slug": "Chuckles",
+    "prognosticator_slug": "St-Louis-Chuckles",
     "year": 1983,
     "prediction": "Early Spring",
     "predict_early_spring": 1
@@ -2023,6 +2023,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Madoc Mike",
+    "prognosticator_slug": "Madoc-Mike",
+    "year": 1986,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Octoraro Orphie",
     "prognosticator_slug": "Octoraro-Orphie",
     "year": 1986,
@@ -2338,6 +2345,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Madoc Mike",
+    "prognosticator_slug": "Madoc-Mike",
+    "year": 1988,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Nostradamus",
     "prognosticator_slug": "Nostradamus",
     "year": 1988,
@@ -2402,17 +2416,17 @@
   },
   {
     "prognosticator_name": "Woody",
-    "prognosticator_slug": "Woody-Milwaukee",
-    "year": 1988,
-    "prediction": "Long Winter",
-    "predict_early_spring": 0
-  },
-  {
-    "prognosticator_name": "Woody",
     "prognosticator_slug": "Lincoln-Park-Woody2",
     "year": 1988,
     "prediction": "Early Spring",
     "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Woody",
+    "prognosticator_slug": "Woody-Milwaukee",
+    "year": 1988,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
   },
   {
     "prognosticator_name": "Wurzel",
@@ -10213,6 +10227,13 @@
     "predict_early_spring": null
   },
   {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2016,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Fenwick Flossie",
     "prognosticator_slug": "Fenwick-Flossie",
     "year": 2016,
@@ -10710,6 +10731,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
+    "year": 2017,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2017,
@@ -10869,6 +10897,13 @@
     "year": 2017,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2017,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -11104,6 +11139,13 @@
   {
     "prognosticator_name": "Prairie Dog Pete",
     "prognosticator_slug": "Prairie-Dog-Pete",
+    "year": 2017,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Pudding Hill Pete",
+    "prognosticator_slug": "Pudding-Hill-Pete",
     "year": 2017,
     "prediction": "Long Winter",
     "predict_early_spring": 0
@@ -11352,6 +11394,13 @@
     "year": 2018,
     "prediction": "Early Spring",
     "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
+    "year": 2018,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
   },
   {
     "prognosticator_name": "Beardsley Bart",
@@ -11781,6 +11830,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Pudding Hill Pete",
+    "prognosticator_slug": "Pudding-Hill-Pete",
+    "year": 2018,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Punxsutawney Phil",
     "prognosticator_slug": "Punxsutawney-Phil",
     "year": 2018,
@@ -12056,6 +12112,13 @@
   {
     "prognosticator_name": "Balzac Billy",
     "prognosticator_slug": "Balzac-Billy",
+    "year": 2019,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
     "year": 2019,
     "prediction": "Early Spring",
     "predict_early_spring": 1
@@ -12768,6 +12831,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
+    "year": 2020,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2020,
@@ -12927,6 +12997,13 @@
     "year": 2020,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2020,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -13531,6 +13608,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
+    "year": 2021,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2021,
@@ -14007,6 +14091,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Pudding Hill Pete",
+    "prognosticator_slug": "Pudding-Hill-Pete",
+    "year": 2021,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Punxsutawney Phil",
     "prognosticator_slug": "Punxsutawney-Phil",
     "year": 2021,
@@ -14273,6 +14364,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Bay Beach Bobbie",
+    "prognosticator_slug": "Bay-Beach-Bobbie",
+    "year": 2022,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2022,
@@ -14453,6 +14551,13 @@
     "year": 2022,
     "prediction": null,
     "predict_early_spring": null
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2022,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -14700,6 +14805,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Passamaquoddy Pete",
+    "prognosticator_slug": "Passamaquoddy-Pete",
+    "year": 2022,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Patty Pagoda",
     "prognosticator_slug": "Patty-Pagoda",
     "year": 2022,
@@ -14744,6 +14856,13 @@
   {
     "prognosticator_name": "Poppy the Skunk",
     "prognosticator_slug": "Poppy-the-Skunk",
+    "year": 2022,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Portage la Prairie Larry",
+    "prognosticator_slug": "Portage-la-Prairie-Larry",
     "year": 2022,
     "prediction": "Long Winter",
     "predict_early_spring": 0
@@ -15043,6 +15162,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Bay Beach Bernard",
+    "prognosticator_slug": "Bay-Beach-Bernard",
+    "year": 2023,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2023,
@@ -15216,6 +15342,13 @@
     "year": 2023,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2023,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -15456,6 +15589,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Passamaquoddy Pete",
+    "prognosticator_slug": "Passamaquoddy-Pete",
+    "year": 2023,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Patty Pagoda",
     "prognosticator_slug": "Patty-Pagoda",
     "year": 2023,
@@ -15500,6 +15640,13 @@
   {
     "prognosticator_name": "Poppy the Skunk",
     "prognosticator_slug": "Poppy-the-Skunk",
+    "year": 2023,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Portage la Prairie Larry",
+    "prognosticator_slug": "Portage-la-Prairie-Larry",
     "year": 2023,
     "prediction": "Long Winter",
     "predict_early_spring": 0
@@ -15841,6 +15988,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Bay Beach Bernard",
+    "prognosticator_slug": "Bay-Beach-Bernard",
+    "year": 2024,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2024,
@@ -16007,6 +16161,13 @@
     "year": 2024,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2024,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -16254,6 +16415,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Passamaquoddy Pete",
+    "prognosticator_slug": "Passamaquoddy-Pete",
+    "year": 2024,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Patty Pagoda",
     "prognosticator_slug": "Patty-Pagoda",
     "year": 2024,
@@ -16289,6 +16457,13 @@
     "predict_early_spring": 0
   },
   {
+    "prognosticator_name": "Portage la Prairie Larry",
+    "prognosticator_slug": "Portage-la-Prairie-Larry",
+    "year": 2024,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Potato and Yam",
     "prognosticator_slug": "Potato-and-Yam",
     "year": 2024,
@@ -16319,6 +16494,13 @@
   {
     "prognosticator_name": "Prairie Dog Poppy",
     "prognosticator_slug": "Poppy-the-Prairie-Dog",
+    "year": 2024,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Pudding Hill Pete",
+    "prognosticator_slug": "Pudding-Hill-Pete",
     "year": 2024,
     "prediction": "Early Spring",
     "predict_early_spring": 1
@@ -16618,6 +16800,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Bay Beach Bernard",
+    "prognosticator_slug": "Bay-Beach-Bernard",
+    "year": 2025,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Beardsley Bart",
     "prognosticator_slug": "Beardsley-Bart",
     "year": 2025,
@@ -16777,6 +16966,13 @@
     "year": 2025,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2025,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   },
   {
     "prognosticator_name": "Fenwick Flossie",
@@ -16954,6 +17150,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Marietta Melvin",
+    "prognosticator_slug": "Marietta-Melvin",
+    "year": 2025,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
     "prognosticator_name": "Middlemiss Mike and family",
     "prognosticator_slug": "Middlemiss-Mike",
     "year": 2025,
@@ -17031,6 +17234,13 @@
     "predict_early_spring": 1
   },
   {
+    "prognosticator_name": "Passamaquoddy Pete",
+    "prognosticator_slug": "Passamaquoddy-Pete",
+    "year": 2025,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
     "prognosticator_name": "Patty Pagoda",
     "prognosticator_slug": "Patty-Pagoda",
     "year": 2025,
@@ -17061,6 +17271,13 @@
   {
     "prognosticator_name": "Poppy the Skunk",
     "prognosticator_slug": "Poppy-the-Skunk",
+    "year": 2025,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Portage la Prairie Larry",
+    "prognosticator_slug": "Portage-la-Prairie-Larry",
     "year": 2025,
     "prediction": "Early Spring",
     "predict_early_spring": 1
@@ -17372,5 +17589,824 @@
     "year": 2025,
     "prediction": "Long Winter",
     "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Athene",
+    "prognosticator_slug": "Athene",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Balzac Billy",
+    "prognosticator_slug": "Balzac-Billy",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Bay Beach Bernard",
+    "prognosticator_slug": "Bay-Beach-Bernard",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Beans",
+    "prognosticator_slug": "Beans",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Beardsley Bart",
+    "prognosticator_slug": "Beardsley-Bart",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Bee Cave Bob",
+    "prognosticator_slug": "Bee-Cave-Bob",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Benny the Bass",
+    "prognosticator_slug": "Benny-the-Bass",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Big Al",
+    "prognosticator_slug": "Big-Al",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Birmingham Jill",
+    "prognosticator_slug": "Birmingham-Jill",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Bowman Bill",
+    "prognosticator_slug": "Bowman-Bill",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Bristol Bob",
+    "prognosticator_slug": "Bristol-Bob",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Buckeye Chuck",
+    "prognosticator_slug": "Buckeye-Chuck",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Buffalo Bert",
+    "prognosticator_slug": "Buffalo-Bert",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Caterpillar Joe",
+    "prognosticator_slug": "Caterpillar-Joe",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Cedar",
+    "prognosticator_slug": "Cedar",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Chesapeake Chuck",
+    "prognosticator_slug": "Chesapeake-Chuck",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Chicago Harry",
+    "prognosticator_slug": "Chicago-Harry",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Chilly Charlie",
+    "prognosticator_slug": "Chilly-Charlie",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Chuck Wood",
+    "prognosticator_slug": "Chuck-Wood",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Chuckles",
+    "prognosticator_slug": "Chuckles",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Cincinnati Sammy",
+    "prognosticator_slug": "Cincinnati-Sammy",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Cluxatawney Henrietta",
+    "prognosticator_slug": "Clucksatawney-Hen",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "CODdles",
+    "prognosticator_slug": "CODdles",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Concord Casimir",
+    "prognosticator_slug": "Concord-Casimir",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Concord Charlie",
+    "prognosticator_slug": "Concord-Charlie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Cornelia",
+    "prognosticator_slug": "Cornelia",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Dover Doug",
+    "prognosticator_slug": "Dover-Doug",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Dunkirk Dave",
+    "prognosticator_slug": "Dunkirk-Dave",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Edgewater Elsie",
+    "prognosticator_slug": "Edgewater-Elsie",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Elliott the Groundhog",
+    "prognosticator_slug": "Elliott-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Featherstone",
+    "prognosticator_slug": "Featherstone",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Fenwick Flossie",
+    "prognosticator_slug": "Fenwick-Flossie",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Fig Newton",
+    "prognosticator_slug": "Fig-Newton",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Flatiron Freddy",
+    "prognosticator_slug": "Flatiron-Freddy",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Fred la marmotte",
+    "prognosticator_slug": "Fred-la-marmotte",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "French Creek Freddie",
+    "prognosticator_slug": "French-Creek-Freddie",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "General Beauregard Lee",
+    "prognosticator_slug": "General-Beauregard-Lee",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Gertie the Groundhog",
+    "prognosticator_slug": "Gertie-the-Groundhog",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Groundhog mamma",
+    "prognosticator_slug": "groundhog-mamma",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Grover Cleveland Undergrounder",
+    "prognosticator_slug": "Grover-Cleveland-Undergrounder",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Grover the Groundhog and Sweet Arrow Sue",
+    "prognosticator_slug": "Grover-the-Groundhog",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Harleysville Hank",
+    "prognosticator_slug": "Harleysville-Hank",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Holtsville Hal",
+    "prognosticator_slug": "Holtsville-Hal",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Hope the Groundhog",
+    "prognosticator_slug": "Hope-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Hudson the Polar Bear",
+    "prognosticator_slug": "Hudson-the-Polar-Bear",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Jessup Giuseppe",
+    "prognosticator_slug": "Jessup-Giuseppe",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Jimmy the Groundhog",
+    "prognosticator_slug": "Jimmy-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Kennebec Kenny",
+    "prognosticator_slug": "Kennebec-Kenny",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Lady Edwina of Essex",
+    "prognosticator_slug": "Essex-Edwina",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Lander Lil",
+    "prognosticator_slug": "Lander-Lil",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Landing Lily",
+    "prognosticator_slug": "Landing-Lily",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Landis Lou",
+    "prognosticator_slug": "Landis-Lou",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Lawrenceville Lucy",
+    "prognosticator_slug": "Lawrenceville-Lucy",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Lucy the Lobster",
+    "prognosticator_slug": "Lucy-the-Lobster",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Malverne Mel",
+    "prognosticator_slug": "Malverne-Mel",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Manitoba Merv",
+    "prognosticator_slug": "Manitoba-Merv",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Maple",
+    "prognosticator_slug": "Maple",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Marietta Melvin",
+    "prognosticator_slug": "Marietta-Melvin",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Middlemiss Mike and family",
+    "prognosticator_slug": "Middlemiss-Mike",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Milwaukee County Zoo Eastern Black Rhinos",
+    "prognosticator_slug": "Milwaukee-Zoo-Eastern-Black-Rhinos",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Mondawmin Moose",
+    "prognosticator_slug": "Mondawmin-Moose",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Mount Gretna Grady",
+    "prognosticator_slug": "Mt-Gretna-Grady",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Mount Joy Minnie",
+    "prognosticator_slug": "Mount-Joy-Minnie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Ms. G",
+    "prognosticator_slug": "Ms_G",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "MT Parker",
+    "prognosticator_slug": "MT-Parker",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Octoraro Orphie",
+    "prognosticator_slug": "Octoraro-Orphie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Okie the Mascot",
+    "prognosticator_slug": "Okie-the-mascot",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Passamaquoddy Pete",
+    "prognosticator_slug": "Passamaquoddy-Pete",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Patty Pagoda",
+    "prognosticator_slug": "Patty-Pagoda",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Paulie the Rabbit",
+    "prognosticator_slug": "Paulie-the-Rabbit",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Pisgah Piper",
+    "prognosticator_slug": "Pisgah-Piper",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Pluto \"The Good Bunny\"",
+    "prognosticator_slug": "pluto-the-good-bunny",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Polk County Paula",
+    "prognosticator_slug": "Polk-County-Paula",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Poor Richard",
+    "prognosticator_slug": "Poor-Richard",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Poppy the Skunk",
+    "prognosticator_slug": "Poppy-the-Skunk",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Portage la Prairie Larry",
+    "prognosticator_slug": "Portage-la-Prairie-Larry",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Potomac Phil",
+    "prognosticator_slug": "Potomac-Phil",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Prairie Dog Pete",
+    "prognosticator_slug": "Prairie-Dog-Pete",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Punxsutawney Phil",
+    "prognosticator_slug": "Punxsutawney-Phil",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Queen City Charlie",
+    "prognosticator_slug": "Queen-City-Charlie",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Quentin the Quahog",
+    "prognosticator_slug": "Quentin-Quahog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Ridge Lea Larry",
+    "prognosticator_slug": "Ridge-Lea-Larry",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Roxbury Rita",
+    "prognosticator_slug": "Roxbury-Rita",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Sam Champion",
+    "prognosticator_slug": "Sam-Champion",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Sand Mountain Sam",
+    "prognosticator_slug": "Sand-Mountain-Sam",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Schnogadahl Sammi",
+    "prognosticator_slug": "Schnogadahl-Sammi",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Scramble the Duck",
+    "prognosticator_slug": "Scramble-the-duck",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Shubenacadie Sam",
+    "prognosticator_slug": "Shubenacadie-Sam",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Snack Town Steve",
+    "prognosticator_slug": "Snack-Town-Steve",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Snerd",
+    "prognosticator_slug": "Snerd",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "South Shore Sally",
+    "prognosticator_slug": "South-Shore-Sally",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Starr Lions",
+    "prognosticator_slug": "Starr-Lions",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Staten Island Chuck",
+    "prognosticator_slug": "Staten-Island-Chuck",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Stonewall Jackson",
+    "prognosticator_slug": "Stonewall-Jackson",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Stormy Marmot",
+    "prognosticator_slug": "Stormy-Marmot",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Stumptown Fil",
+    "prognosticator_slug": "Stumptown-Fil",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Tad",
+    "prognosticator_slug": "Tad",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Tater",
+    "prognosticator_slug": "Tater-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Tempesta",
+    "prognosticator_slug": "Tempesta",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "That Dog Named Gidget",
+    "prognosticator_slug": "That-Dog-Named-Gidget",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Tiana, Louis, and Charlotte",
+    "prognosticator_slug": "Tiana-Louis-and-Charlotte",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Tinicum Tim",
+    "prognosticator_slug": "Tinicum-Tim",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Tomothy",
+    "prognosticator_slug": "Tomothy",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Unadilla Billie",
+    "prognosticator_slug": "Unadilla-Billie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Uni",
+    "prognosticator_slug": "Uni",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Van Isle Violet",
+    "prognosticator_slug": "Van-Isle-Violet",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Walnut",
+    "prognosticator_slug": "Walnut",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Wanda the Groundhog",
+    "prognosticator_slug": "Wanda-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Wiarton Willie",
+    "prognosticator_slug": "Wiarton-Willie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Wildwood Willie",
+    "prognosticator_slug": "Wildwood-Willie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Willow the Woodchuck",
+    "prognosticator_slug": "Willow-the-Woodchuck",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Woodburn Wild Charles Winchester",
+    "prognosticator_slug": "Woodburn-Wild-Charles-Winchester",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Woodstock Willie",
+    "prognosticator_slug": "Woodstock-Willie",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
+  },
+  {
+    "prognosticator_name": "Woody",
+    "prognosticator_slug": "Woody",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Wynonna the Wild Hearts Woodchuck",
+    "prognosticator_slug": "Wynonna-the-Wild-Hearts-Woodchuck",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Yahdee",
+    "prognosticator_slug": "Yahdee",
+    "year": 2026,
+    "prediction": "Long Winter",
+    "predict_early_spring": 0
+  },
+  {
+    "prognosticator_name": "Yonah the Groundhog",
+    "prognosticator_slug": "Yonah-the-Groundhog",
+    "year": 2026,
+    "prediction": "Early Spring",
+    "predict_early_spring": 1
   }
 ]

@@ -55,7 +55,7 @@ extract_predictions <- function(page) {
 # loop through 2019-current predictions
 # REMEMBER: update end year
 
-  for (y in 2019:2025) {
+  for (y in 2019:2026) {
     url <- paste0("https://countdowntogroundhogday.com/predictions/", y, "_predictions")
 
     session <- bow(url, user_agent = "Class Project")

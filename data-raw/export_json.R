@@ -78,7 +78,7 @@ if (file.exists(class_def1_path)) {
     filter(!is.na(prediction) & !is.na(class)) %>%
     mutate(
       predicted_early = prediction == "Early Spring",
-      actual_early = class == "early spring",
+      actual_early = class == "Early Spring",
       correct = predicted_early == actual_early
     ) %>%
     group_by(prognosticator_slug, prognosticator_name) %>%

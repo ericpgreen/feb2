@@ -1,7 +1,7 @@
 Package: feb2
 Type: Package
 Title: Groundhog Day Prediction Data and Accuracy Metrics
-Version: 0.2.1
+Version: 0.2.2
 Author: Eric Green
 Maintainer: Eric Green <epgreen@gmail.com>
 Description: Every year on February 2, Groundhog Day, the famous groundhog
@@ -21,7 +21,7 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends:
-    R (>= 2.10)
+    R (>= 3.5)
 RoxygenNote: 7.3.1
 URL: https://ericpgreen.github.io/feb2/
 BugReports: https://github.com/ericpgreen/feb2/issues

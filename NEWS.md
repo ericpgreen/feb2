@@ -1,3 +1,19 @@
+# feb2 0.2.2
+
+## Data updates
+
+* Added 2026 Groundhog Day predictions and weather classifications. Prognosticators grew from 315 to 331, predictions from 2,482 to 2,630 (117 new for 2026), and weather classification now extends through 2026 (160 Early Spring, 2 Long Winter for the classifiable cities).
+
+* 2026 weather was fetched incrementally (Jan–Mar 2026 only) via `data-raw/weather_2026_increment.R` and merged with existing historical monthly means; the 15-year rolling averages and `def1` classifications for all years ≤2025 are byte-identical to the prior release.
+
+## Bug fixes
+
+* Fixed a casing bug in `data-raw/export_json.R` that made `accuracy.json` measure the wrong thing. The accuracy computation compared classifications against `"early spring"` (lowercase) when the data uses `"Early Spring"`, so every prognosticator's reported accuracy was inverted. Punxsutawney Phil now correctly shows 33.9% (matching his real ~34% record).
+
+## Known limitations
+
+* 16 forecasters new in 2026 lack taxonomy in `prognosticator_classification.csv`, and 11 cities new this cycle have no 2026 `def1` classification (insufficient 15-year history). Both are resolved by a future full weather backfill.
+
 # feb2 0.2.1
 
 ## New features

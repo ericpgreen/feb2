@@ -11,7 +11,7 @@ library(jsonlite)
 # =============================================================================
 
 START_YEAR <- 1940
-END_YEAR <- 2025
+END_YEAR <- 2026
 BATCH_SIZE <- 5  # cities per request
 REQUEST_DELAY <- 5.0  # seconds between requests
 MAX_RETRIES <- 5  # max retries per batch
