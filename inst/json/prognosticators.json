@@ -1930,9 +1930,9 @@
     "prognosticator_city": "02",
     "prognosticator_lat": 49.4533,
     "prognosticator_long": 3.6069,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Stuffed groundhog",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -2194,9 +2194,9 @@
     "prognosticator_city": "Leominster, MA",
     "prognosticator_lat": 42.5267,
     "prognosticator_long": -71.7615,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Plastic Pink Flamingo",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Flamingo",
     "Status": "Active"
   },
   {
@@ -2304,9 +2304,9 @@
     "prognosticator_city": "Green Bay, WI",
     "prognosticator_lat": 44.5126,
     "prognosticator_long": -88.0126,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Groundhog",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -2865,9 +2865,9 @@
     "prognosticator_city": "Portage la Prairie, MB",
     "prognosticator_lat": 49.9724,
     "prognosticator_long": -98.2892,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Stuffed Groundhog",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -2975,9 +2975,9 @@
     "prognosticator_city": "Saint Andrews, NB",
     "prognosticator_lat": 45.0749,
     "prognosticator_long": -67.0517,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Homemade Groundhog",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -3107,9 +3107,9 @@
     "prognosticator_city": "Green Bay, WI",
     "prognosticator_lat": 44.5126,
     "prognosticator_long": -88.0126,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Groundhog",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -3437,9 +3437,9 @@
     "prognosticator_city": "Marietta, PA",
     "prognosticator_lat": 40.057,
     "prognosticator_long": -76.5521,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Groundhog puppet",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -3492,9 +3492,9 @@
     "prognosticator_city": "New Orleans, LA",
     "prognosticator_lat": 29.9561,
     "prognosticator_long": -90.0734,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Capybaras",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Capybara",
     "Status": "Active"
   },
   {
@@ -3503,9 +3503,9 @@
     "prognosticator_city": "Toronto, ON",
     "prognosticator_lat": 43.6535,
     "prognosticator_long": -79.3839,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Polar Bear",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Polar Bear",
     "Status": "Active"
   },
   {
@@ -3514,9 +3514,9 @@
     "prognosticator_city": "Milwaukee, WI",
     "prognosticator_lat": 43.0386,
     "prognosticator_long": -87.9091,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Eastern Black Rhinos",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Rhinoceros",
     "Status": "Active"
   },
   {
@@ -3525,9 +3525,9 @@
     "prognosticator_city": "Milltown, NJ",
     "prognosticator_lat": 40.4562,
     "prognosticator_long": -74.4432,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Rabbit",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Rabbit",
     "Status": "Active"
   },
   {
@@ -3547,9 +3547,9 @@
     "prognosticator_city": "Sewell, NJ",
     "prognosticator_lat": 39.7707,
     "prognosticator_long": -75.1439,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Eastern box turtle",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Box Turtle",
     "Status": "Active"
   },
   {
@@ -3569,9 +3569,9 @@
     "prognosticator_city": "Trenton, GA",
     "prognosticator_lat": 34.872,
     "prognosticator_long": -85.5091,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Painted rocks that resemble a caterpillar",
+    "prognosticator_status": "Inanimate",
+    "prognosticator_creature": "Caterpillar",
     "Status": "Active"
   },
   {
@@ -3591,9 +3591,9 @@
     "prognosticator_city": "Apex, NC",
     "prognosticator_lat": 35.7325,
     "prognosticator_long": -78.8506,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Bunny Rabbit",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Rabbit",
     "Status": "Active"
   },
   {
@@ -3602,9 +3602,9 @@
     "prognosticator_city": "Baltimore, MD",
     "prognosticator_lat": 39.2909,
     "prognosticator_long": -76.6108,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Opossum",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Opossum",
     "Status": "Active"
   },
   {
@@ -3613,9 +3613,9 @@
     "prognosticator_city": "WI",
     "prognosticator_lat": 44.4309,
     "prognosticator_long": -89.6885,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Great Dane",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Dog",
     "Status": "Active"
   },
   {
@@ -3624,9 +3624,9 @@
     "prognosticator_city": "Cleveland, OH",
     "prognosticator_lat": 41.4997,
     "prognosticator_long": -81.6937,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Groundhog",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   },
   {
@@ -3635,9 +3635,9 @@
     "prognosticator_city": "Fresno, CA",
     "prognosticator_lat": 36.7394,
     "prognosticator_long": -119.7848,
-    "prognosticator_type": null,
-    "prognosticator_status": null,
-    "prognosticator_creature": null,
+    "prognosticator_type": "Groundhog",
+    "prognosticator_status": "Creature",
+    "prognosticator_creature": "Groundhog",
     "Status": "Active"
   }
 ]
